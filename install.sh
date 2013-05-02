@@ -13,7 +13,11 @@ if ! test -f "$chef_binary"; then
     aptitude safe-upgrade -fy
     #apt-get -o Dpkg::Options::="--force-confnew" \
     #    --force-yes -fuy dist-upgrade &&
-    
+
+
+    # install omnibus chef - curl -L https://www.opscode.com/chef/install.sh | sudo bash
+
+
     # Install Ruby and Chef
 
     aptitude install zlib1g-dev openssl libopenssl-ruby1.9.1 libssl-dev libruby1.9.1 libreadline-dev git-core make make-doc -y
@@ -33,6 +37,9 @@ if ! test -f "$chef_binary"; then
 
     gem update --no-rdoc --no-ri
     gem install ohai chef --no-rdoc --no-ri
+
+    # http://berkshelf.com/
+    gem install berkshelf
 
 fi &&
  

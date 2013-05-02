@@ -2,6 +2,9 @@ Vagrant::Config.run do |config|
 
   config.vm.box = "ubuntu-1110-server-amd64"
 
+  # http://releases.ubuntu.com/precise/ubuntu-12.04.2-server-amd64.iso
+  # http://releases.ubuntu.com/precise/ubuntu-12.04.2-server-i386.iso
+
   # Assign this VM to a host only network IP, allowing you to access it
   # via the IP.
   # config.vm.network "33.33.33.10"
@@ -9,7 +12,7 @@ Vagrant::Config.run do |config|
   config.vm.forward_port 22, 2222
 
   # if you want to set up multiple instances at the same time,
-  # you can name them (:web and :gridfs below) and refer to them 
+  # you can name them (:web and :gridfs below) and refer to them
   # in your vagrant commands
   #
   # vagrant provision web
