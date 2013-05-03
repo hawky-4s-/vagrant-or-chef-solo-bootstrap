@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# commom tmp dir
+TMP_DIR_BOOTSTRAP="/tmp/bootstrap"
+
 # get environment variables
 OS=$(lsb_release -si)
 ARCH=$(uname -m)
@@ -29,7 +32,15 @@ esac
 
 
 # download and install vagrant
-wget $(VAGRANT_RELEASE_URL$ARCH).$($PACKAGE_FORMAT)
+wget $(VAGRANT_RELEASE_URL$ARCH).$($PACKAGE_FORMAT) -O $(TMP_DIR_BOOTSTRAP)
+
+# install vagrant
+
+
+# install vagrant's berkshelf plugin
+vagrant plugin install vagrant-berkshelf
+
+rm -rf $(TMP_DIR_BOOTSTRAP)
 
 #wget $($VAGRANT_RELEASE_URL) + $(OS)
 
