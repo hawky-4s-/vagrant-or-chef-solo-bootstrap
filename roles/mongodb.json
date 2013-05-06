@@ -1,0 +1,27 @@
+{
+    "name": "mongodb",
+    "chef_type": "role",
+    "json_class": "Chef::Role",
+    "description": "mongodb server role",
+    "default_attributes": {
+        "mongodb": {
+            "cluster_name": "cluster_livingoz",
+            "dbpath": "",
+            "logpath": "",
+            "bind_ip": "127.0.0.1",
+            "port": 27017,
+            "replicaset_name": "rs0"
+        },
+        "mms_agent": {
+            "api_key": "c7d4668c382d74c3f633f99766d82607",
+            "secret_key": "f1f32bd0c7648caad7aa2be12fefd049"
+        }
+    },
+    "run_list": [
+        "recipe[mongodb::10gen_repo]",
+        "recipe[mongodb::replicaset]",
+        "recipe[python]",
+        "recipe[runit]",
+        "recipe[mms-agent]"
+    ]
+}

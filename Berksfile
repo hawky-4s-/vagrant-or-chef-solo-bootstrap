@@ -1,43 +1,37 @@
-cookbook "build-essential"
-
-cookbook "apt"
-
-cookbook "git"
-
-cookbook "fail2ban"
-
-cookbook "yum"
-cookbook "java"
-
-cookbook "ntp"
-
 # monitoring
-cookbook "papertrail-rsyslog", github: "hipsnip-cookbooks/papertrail-rsyslog" or https://github.com/hipsnip/papertrail-rsyslog.git
-cookbook "newrelic", github: "escapestudios/chef-newrelic"
-cookbook "chef-mongodb-mms-agent", github: "treasure-data/chef-mongodb-mms-agent"
+cookbook "papertrail-rsyslog", github: "hipsnip-cookbooks/papertrail-rsyslog"
 cookbook "newrelic-sysmond"
 
 # applications
-cookbook "elasticsearch", github: "elasticsearch/cookbook-elasticsearch", ref: "0.2.7"
+cookbook "elasticsearch", github: "elasticsearch/cookbook-elasticsearch"
 cookbook "chef-jbossas7", github: "wharton/chef-jbossas7"
 
 # databases
-cookbook "mongodb-10gen", github: "higanworks-cookbooks/mongodb-10gen"
-cookbook "chef-mongodb", github: "edelight/chef-mongodb.git"
+cookbook "chef-mongodb", github: "edelight/chef-mongodb"
+cookbook "chef-mongodb-mms-agent", github: "treasure-data/chef-mongodb-mms-agent"
 
 cookbook "nginx"
-cookbook "nginx_conf"
-cookbook "nginx_vhost"
+#cookbook "nginx_conf"
+#cookbook "nginx_vhost"
 
-cookbook "tomcat_latest"
+#cookbook "tomcat_latest"
 
-cookbook "openvpn"
-cookbook "openldap"
+#cookbook "openvpn"
+#cookbook "openldap"
 
-cookbook "jenkins"
+#cookbook "jenkins"
 
+
+# bootstrap
+cookbook "git"
+cookbook "openssh"
+cookbook "java"
+cookbook "ntp"
+cookbook "fail2ban"
 
 cookbook "rbenv"
+cookbook "chef-rbenv", github: "fnichol/chef-rbenv"
+cookbook "user"
 cookbook "users"
-cookbook "openssh"
+cookbook "sudo"
 

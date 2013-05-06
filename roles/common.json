@@ -1,0 +1,38 @@
+{
+    "name": "common",
+    "chef_type": "role",
+    "json_class": "Chef::Role",
+    "description": "Install basic stuff for all systems",
+    "default_attributes": {
+        "openssh": {
+            "server": {
+                "port": "8122",
+                "password_authentication": "no"
+            }
+        },
+        "java": {
+            "install_flavor": "oracle",
+            "jdk_version": "7",
+            "oracle": {
+                "accept_oracle_download_terms": "true"
+            }
+        },
+        "ntp": {
+            "servers": ["ntp1.rz-ip.net", "ntp2.rz-ip.net"]
+        },
+        "papertrail": {
+            "port": 43295
+        },
+        "new_relic": {
+            "license_key": "9b200db9c0917ef7a788ad65fd7662a236335a7c"
+        }
+    },
+    "run_list": [
+        "recipe[java]",
+        "recipe[ntp]",
+        "recipe[git]",
+        "recipe[fail2ban]",
+        "recipe[papertrail]",
+        "recipe[newrelic-sysmond]"
+    ]
+}

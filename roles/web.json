@@ -1,0 +1,21 @@
+{
+    "name": "web",
+    "chef_type": "role",
+    "json_class": "Chef::Role",
+    "description": "The base role for systems that serve HTTP traffic",
+    "default_attributes": {
+        "app": {
+            "name": "tomatoes",
+            "web_dir": "/var/data/www/apps/tomatoes"
+        },
+        "user":{
+            "name": "vagrant"
+        },
+        "nginx": {
+            "version": "1.4.0"
+        }
+    },
+    "run_list": [
+        "recipe[nginx]"
+    ]
+}

@@ -14,7 +14,7 @@ If you are using this and you would like features added, create an issue or pull
 
 
 ##roles
-* email
+* mail
 * ldap
 * apache2 / nginx
 * development -> nexus, jenkins, sonar?
@@ -24,7 +24,7 @@ If you are using this and you would like features added, create an issue or pull
 servers:
 
 infrastructure:
-    email (dovecot)
+    mail (dovecot)
     ldap master
     apache2 (replace with nginx)
     nexus
@@ -35,7 +35,9 @@ production
     login with ldap
     jboss eap 6.1
 
+ports:
 
+25 (SMTP), 80 (HTTP), 110 (POP3), 143 (IMAP), 443 (HTTPS), 465 (SMTPS), 993 (IMAPS), and 995 (POP3S).
 
 http://learnchef.getharvest.com/
 
@@ -73,14 +75,6 @@ package "libpcre3-dev" do
     action :upgrade
   end
 end
-
-
-
-role:
-name "web_server"
-description "A basic web server"
-run_list "recipe[datacenter]", "recipe[nginx]"
-
 
 
 ebooks:

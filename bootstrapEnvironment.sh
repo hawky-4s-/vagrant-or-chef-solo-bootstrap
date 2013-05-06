@@ -41,15 +41,3 @@ wget $(VAGRANT_RELEASE_URL)$(ARCH).$(PACKAGE_FORMAT) -O $(TMP_DIR_BOOTSTRAP)
 vagrant plugin install vagrant-berkshelf
 
 rm -rf $(TMP_DIR_BOOTSTRAP)
-
-#wget $($VAGRANT_RELEASE_URL) + $(OS)
-
-# install vagrant
-
-# check which os and include install scripts for VirtualBox (optional  vagrant)
-
-#http://files.vagrantup.com/packages/64e360814c3ad960d810456add977fd4c7d47ce6/vagrant_i686.deb
-#http://files.vagrantup.com/packages/64e360814c3ad960d810456add977fd4c7d47ce6/vagrant_x86_64.deb
-
-#http://files.vagrantup.com/packages/64e360814c3ad960d810456add977fd4c7d47ce6/vagrant_i686.rpm
-#http://files.vagrantup.com/packages/64e360814c3ad960d810456add977fd4c7d47ce6/vagrant_x86_64.rpm

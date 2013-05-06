@@ -1,0 +1,11 @@
+{
+    "name": "mail",
+    "chef_type": "role",
+    "json_class": "Chef::Role",
+    "description": "The base role for systems that serve HTTP traffic",
+    "default_attributes": {
+    },
+    "run_list": [
+        "recipe[]"
+    ]
+}
