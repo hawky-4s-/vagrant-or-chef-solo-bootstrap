@@ -8,6 +8,34 @@ If you are using this and you would like features added, create an issue or pull
 * rbenv and ruby 1.9.3+
 * zsh, maybe with my .oh-my-zsh repo
 
+##nodes
+* infrastructure
+* app server
+
+
+##roles
+* email
+* ldap
+* apache2 / nginx
+* development -> nexus, jenkins, sonar?
+* appserver
+* database
+
+servers:
+
+infrastructure:
+    email (dovecot)
+    ldap master
+    apache2 (replace with nginx)
+    nexus
+    jenkins
+    sonar?
+
+production
+    login with ldap
+    jboss eap 6.1
+
+
 
 http://learnchef.getharvest.com/
 
@@ -52,3 +80,17 @@ role:
 name "web_server"
 description "A basic web server"
 run_list "recipe[datacenter]", "recipe[nginx]"
+
+
+
+ebooks:
+
+http://geek-book.org/book/instant-osgi-starter
+http://geek-book.org/book/data-analytics-models-and-algorithms-for-intelligent-data-analysis
+http://geek-book.org/book/soa-made-simple
+http://geek-book.org/book/continuous-delivery-and-devops-a-quickstart-guide
+http://geek-book.org/book/test-driven-infrastructure-with-chef
+http://geek-book.org/book/akka-essentials
+http://geek-book.org/book/instant-sublime-text-starter
+http://geek-book.org/book/apache-tomcat-7-essentials
+

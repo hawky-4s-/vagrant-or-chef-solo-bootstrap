@@ -22,7 +22,8 @@ cookbook "elasticsearch", github: "elasticsearch/cookbook-elasticsearch", ref: "
 cookbook "chef-jbossas7", github: "wharton/chef-jbossas7"
 
 # databases
-cookbook "mongodb-10gen", github: "higanworks-cookbooks/mongodb-10gen" or https://github.com/edelight/chef-mongodb.git
+cookbook "mongodb-10gen", github: "higanworks-cookbooks/mongodb-10gen"
+cookbook "chef-mongodb", github: "edelight/chef-mongodb.git"
 
 cookbook "nginx"
 cookbook "nginx_conf"

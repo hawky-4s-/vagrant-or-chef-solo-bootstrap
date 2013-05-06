@@ -32,7 +32,7 @@ esac
 
 
 # download and install vagrant
-wget $(VAGRANT_RELEASE_URL$ARCH).$($PACKAGE_FORMAT) -O $(TMP_DIR_BOOTSTRAP)
+wget $(VAGRANT_RELEASE_URL)$(ARCH).$(PACKAGE_FORMAT) -O $(TMP_DIR_BOOTSTRAP)
 
 # install vagrant
 
