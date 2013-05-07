@@ -19,7 +19,10 @@ cookbook "nginx"
 #cookbook "openvpn"
 #cookbook "openldap"
 
+####
+# configure nginx as proxy for jenkins. nexus, elasticsearch and jboss
 #cookbook "jenkins"
+#cookbook "nexus"
 
 
 # bootstrap
@@ -31,6 +34,8 @@ cookbook "fail2ban"
 
 cookbook "rbenv"
 cookbook "chef-rbenv", github: "fnichol/chef-rbenv"
+
+cookbook "chef-solo-search", github: "edelight/chef-solo-search"
 cookbook "user"
 cookbook "users"
 cookbook "sudo"
