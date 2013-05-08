@@ -32,8 +32,8 @@ cookbook "java"
 cookbook "ntp"
 cookbook "fail2ban"
 
-cookbook "rbenv"
-cookbook "chef-rbenv", github: "fnichol/chef-rbenv"
+#cookbook "rbenv"
+#cookbook "chef-rbenv", github: "fnichol/chef-rbenv"
 
 cookbook "chef-solo-search", github: "edelight/chef-solo-search"
 cookbook "user"

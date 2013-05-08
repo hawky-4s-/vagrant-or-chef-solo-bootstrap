@@ -6,11 +6,9 @@
     "default_attributes": {
         "mongodb": {
             "cluster_name": "cluster_livingoz",
-            "dbpath": "",
-            "logpath": "",
             "bind_ip": "127.0.0.1",
             "port": 27017,
-            "replicaset_name": "rs0"
+            "replicaset_name": "madbid0"
         },
         "mms_agent": {
             "api_key": "c7d4668c382d74c3f633f99766d82607",
