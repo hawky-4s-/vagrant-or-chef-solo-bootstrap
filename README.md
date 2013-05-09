@@ -104,3 +104,23 @@ if node[:instance_role] == 'vagrant'
   # do something that should only be done inside
   # a Vagrant box
 end
+
+#speed up downloads in vagrant boxes
+config.vm.provision :shell, :inline => "sed -i 's/us.archive/de.archive/g' /etc/apt/sources.list"
+
+
+
+#interesting links
+http://scriptogr.am/cbednarski/post/chef-berkshelf
+http://misheska.com/
+https://gist.github.com/wilmoore/1615295#file_install_virtualbox_latest_ubuntu.sh
+https://github.com/fesplugas/rbenv-installer/blob/master/bin/rbenv-installer
+http://vialstudios.com/guide-authoring-cookbooks.html
+
+http://docs.opscode.com/essentials_cookbooks.html#Cookbooks-SiteSpecificCookbooks
+
+http://ed.victavision.co.uk/blog/post/4-8-2012-chef-solo-encrypted-data-bags
+http://ed.victavision.co.uk/blog/post/21-7-2012-chef-solo-data-bags
+http://docs.opscode.com/essentials_data_bags_encrypt.html
+http://docs.opscode.com/essentials_data_bags.html
+https://gist.github.com/aaronjensen/4123044
