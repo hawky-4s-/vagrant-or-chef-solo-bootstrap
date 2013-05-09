@@ -2,24 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4d1bf848-0980-446f-a2be-53e5d8344345" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Berksfile" afterPath="$PROJECT_DIR$/Berksfile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/roles/mongodb.json" afterPath="$PROJECT_DIR$/roles/mongodb.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ruby.sh" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/veewee.sh" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Vagrantfile" afterPath="$PROJECT_DIR$/Vagrantfile" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrapEnvironment.sh" afterPath="$PROJECT_DIR$/bootstrapEnvironment.sh" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="vagrant-or-chef-solo-bootstrap.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="4d1bf848-0980-446f-a2be-53e5d8344345" time="1368017245676" ignored="false" />
+    <file path="/Dummy.txt" changelist="4d1bf848-0980-446f-a2be-53e5d8344345" time="1368120368061" ignored="false" />
     <file path="/prepare.sh" changelist="4d1bf848-0980-446f-a2be-53e5d8344345" time="1367503679933" ignored="false" />
     <file path="/install.sh" changelist="4d1bf848-0980-446f-a2be-53e5d8344345" time="1367496912718" ignored="false" />
     <file path="/prepareEnvironment.sh" changelist="4d1bf848-0980-446f-a2be-53e5d8344345" time="1367593381600" ignored="false" />
     <file path="/Berksfile" changelist="4d1bf848-0980-446f-a2be-53e5d8344345" time="1367943462767" ignored="false" />
-    <file path="/README.md" changelist="4d1bf848-0980-446f-a2be-53e5d8344345" time="1367840086526" ignored="false" />
+    <file path="/README.md" changelist="4d1bf848-0980-446f-a2be-53e5d8344345" time="1368140092400" ignored="false" />
     <file path="/web" changelist="4d1bf848-0980-446f-a2be-53e5d8344345" time="1367833176128" ignored="false" />
     <file path="/database" changelist="4d1bf848-0980-446f-a2be-53e5d8344345" time="1367829172542" ignored="false" />
     <file path="/applicationServer" changelist="4d1bf848-0980-446f-a2be-53e5d8344345" time="1367829194078" ignored="false" />
     <file path="/solo.rb" changelist="4d1bf848-0980-446f-a2be-53e5d8344345" time="1367829360079" ignored="false" />
-    <file path="/Bash" changelist="4d1bf848-0980-446f-a2be-53e5d8344345" time="1367996651760" ignored="false" />
+    <file path="/Bash" changelist="4d1bf848-0980-446f-a2be-53e5d8344345" time="1368135108137" ignored="false" />
     <file path="/common.json" changelist="4d1bf848-0980-446f-a2be-53e5d8344345" time="1367943065708" ignored="false" />
     <file path="/database.json" changelist="4d1bf848-0980-446f-a2be-53e5d8344345" time="1367837060254" ignored="false" />
     <file path="/a.dummy" changelist="4d1bf848-0980-446f-a2be-53e5d8344345" time="1367840239954" ignored="false" />
@@ -27,6 +29,9 @@
     <file path="/.gitignore" changelist="4d1bf848-0980-446f-a2be-53e5d8344345" time="1367943582502" ignored="false" />
     <file path="/pom.xml" changelist="4d1bf848-0980-446f-a2be-53e5d8344345" time="1368020691626" ignored="false" />
     <file path="$PROJECT_DIR$/../madbid/madbid-analytics/madbid-autobidder/pom.xml" changelist="4d1bf848-0980-446f-a2be-53e5d8344345" time="1368020661213" ignored="false" />
+    <file path="/bootstrapEnvironment.sh" changelist="4d1bf848-0980-446f-a2be-53e5d8344345" time="1368140838109" ignored="false" />
+    <file path="/ruby.sh" changelist="4d1bf848-0980-446f-a2be-53e5d8344345" time="1368105772659" ignored="false" />
+    <file path="/veewee.sh" changelist="4d1bf848-0980-446f-a2be-53e5d8344345" time="1368128510650" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,7 +51,6 @@
     <disable_hints />
   </component>
   <component name="DebuggerManager">
-    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
       <breakpoint>
         <option name="NOTIFY_CAUGHT" value="true" />
@@ -83,6 +87,7 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </breakpoint_any>
+    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_rules />
     <ui_properties />
   </component>
@@ -92,91 +97,91 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Berksfile" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Berksfile">
+      <file leaf-file-name="vagrant.json" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/nodes/vagrant.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="14" selection-start="105" selection-end="105" vertical-scroll-proportion="-0.18760757">
+            <state line="5" column="16" selection-start="107" selection-end="107" vertical-scroll-proportion="-3.125">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="README.rdoc" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cookbooks/chef-mongodb-mms-agent/README.rdoc">
+      <file leaf-file-name="solo.json" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/solo.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="58" selection-start="1062" selection-end="1062" vertical-scroll-proportion="0.0">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".gitignore" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
+      <file leaf-file-name="Vagrantfile" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Vagrantfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="66" selection-start="39" selection-end="39" vertical-scroll-proportion="0.0">
+            <state line="39" column="33" selection-start="1209" selection-end="1209" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="hawky4s.json" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/data_bags/users/hawky4s.json">
+      <file leaf-file-name="veewee.sh" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/veewee.sh">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="24" selection-start="55" selection-end="55" vertical-scroll-proportion="-1.25">
+            <state line="15" column="56" selection-start="277" selection-end="277" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="jbossas.json" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/roles/jbossas.json">
+      <file leaf-file-name="deploy.sh" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/deploy.sh">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="28" selection-start="235" selection-end="235" vertical-scroll-proportion="-5.0">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="infrastructure_development.json" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/nodes/infrastructure_development.json">
+      <file leaf-file-name="install.sh" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/install.sh">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="109" selection-start="107" selection-end="107" vertical-scroll-proportion="-3.125">
+            <state line="12" column="25" selection-start="305" selection-end="353" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="appserver_development.json" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/nodes/appserver_development.json">
+      <file leaf-file-name="bootstrapEnvironment.sh" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/bootstrapEnvironment.sh">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="21" selection-start="59" selection-end="66" vertical-scroll-proportion="-1.875">
+            <state line="55" column="40" selection-start="1476" selection-end="1476" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="mongodb.json" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/roles/mongodb.json">
+      <file leaf-file-name="Berksfile.lock" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/site-cookbooks/Berksfile.lock">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="29" selection-start="488" selection-end="488" vertical-scroll-proportion="-9.375">
+            <state line="0" column="79" selection-start="79" selection-end="79" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pom.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../madbid/madbid-analytics/pom.xml">
+      <file leaf-file-name="default.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/site-cookbooks/jbossas7/recipes/default.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="48" column="93" selection-start="1949" selection-end="1949" vertical-scroll-proportion="0.0">
+            <state line="8" column="15" selection-start="130" selection-end="130" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="common.json" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/roles/common.json">
+      <file leaf-file-name="Vagrantfile" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/site-cookbooks/jbossas7/Vagrantfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="33" selection-start="862" selection-end="862" vertical-scroll-proportion="-19.375">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-1.5555556">
               <folding />
             </state>
           </provider>
@@ -200,13 +205,8 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/roles/database.json" />
-        <option value="$PROJECT_DIR$/roles/applicationServer.json" />
-        <option value="$PROJECT_DIR$/roles/jbossas.json" />
-        <option value="$PROJECT_DIR$/roles/mail.json" />
         <option value="$PROJECT_DIR$/nodes/infrastructure_development.json" />
         <option value="$PROJECT_DIR$/nodes/appserver_development.json" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/nodes/vagrant.json" />
         <option value="$PROJECT_DIR$/roles/ldap_client.json" />
         <option value="$PROJECT_DIR$/roles/ldap_server.json" />
@@ -216,13 +216,18 @@
         <option value="$PROJECT_DIR$/roles/mongodb.json" />
         <option value="$PROJECT_DIR$/../madbid/madbid-analytics/pom.xml" />
         <option value="$PROJECT_DIR$/Berksfile" />
+        <option value="$PROJECT_DIR$/Vagrantfile" />
+        <option value="$PROJECT_DIR$/ruby.sh" />
+        <option value="$PROJECT_DIR$/veewee.sh" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/bootstrapEnvironment.sh" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1678" />
-    <option name="width" value="1924" />
-    <option name="height" value="1080" />
+    <option name="y" value="27" />
+    <option name="width" value="1318" />
+    <option name="height" value="1023" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -251,6 +256,7 @@
     </navigator>
     <panes>
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -269,51 +275,8 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="vagrant-or-chef-solo-bootstrap" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="vagrant-or-chef-solo-bootstrap" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="roles" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="vagrant-or-chef-solo-bootstrap" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="vagrant-or-chef-solo-bootstrap" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nodes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="vagrant-or-chef-solo-bootstrap" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="vagrant-or-chef-solo-bootstrap" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cookbooks" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -323,7 +286,7 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="MemberChooser.sorted" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../madbid/madbid-analytics" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../madbid-analytics" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -529,20 +492,20 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1678" y="0" width="1924" height="1080" extended-state="6" />
+    <frame x="0" y="27" width="1318" height="1023" extended-state="4" />
     <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32905984" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32992125" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2496063" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Mongo Runner" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32905984" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32913387" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run with VisualVM" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32905984" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -552,8 +515,8 @@
       <window_info id="Debug with VisualVM" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Mongo Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32977587" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Jenkins" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2860192" sideWeight="0.67094016" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32905984" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17795275" sideWeight="0.6716247" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32837528" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -623,88 +586,118 @@
   <component name="XDebuggerManager">
     <breakpoint-manager />
   </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/nodes/vagrant.json">
+    <entry file="file://$PROJECT_DIR$/Berksfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="17" selection-start="87" selection-end="87" vertical-scroll-proportion="-2.5" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/roles/ldap_client.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="30" selection-start="495" selection-end="495" vertical-scroll-proportion="-11.875" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/roles/ldap_server.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="31" selection-start="291" selection-end="291" vertical-scroll-proportion="-5.625" />
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="66" selection-start="39" selection-end="39" vertical-scroll-proportion="0.0">
+        <state line="1" column="66" selection-start="9" selection-end="9" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data_bags/users/hawky4s.json">
+    <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="24" selection-start="55" selection-end="55" vertical-scroll-proportion="-1.25">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/roles/jbossas.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="28" selection-start="235" selection-end="235" vertical-scroll-proportion="-5.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cookbooks/chef-mongodb-mms-agent/README.rdoc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="58" selection-start="1062" selection-end="1062" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nodes/infrastructure_development.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="109" selection-start="107" selection-end="107" vertical-scroll-proportion="-3.125">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nodes/appserver_development.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="21" selection-start="59" selection-end="66" vertical-scroll-proportion="-1.875">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../madbid/madbid-analytics/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="48" column="93" selection-start="1949" selection-end="1949" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/roles/common.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="33" selection-start="862" selection-end="862" vertical-scroll-proportion="-19.375">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/roles/mongodb.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="29" selection-start="488" selection-end="488" vertical-scroll-proportion="-9.375">
+        <state line="4" column="0" selection-start="39" selection-end="39" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Berksfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="14" selection-start="105" selection-end="105" vertical-scroll-proportion="-0.18760757">
+        <state line="24" column="16" selection-start="665" selection-end="665" vertical-scroll-proportion="0.43010753" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/solo.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/deploy.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Vagrantfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="39" column="33" selection-start="1209" selection-end="1209" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nodes/vagrant.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="16" selection-start="107" selection-end="107" vertical-scroll-proportion="-3.125">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/veewee.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="56" selection-start="277" selection-end="277" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="101" column="29" selection-start="2189" selection-end="2189" vertical-scroll-proportion="-16.56">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/install.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="25" selection-start="305" selection-end="353" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ruby.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="59" column="30" selection-start="1544" selection-end="1544" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bootstrapEnvironment.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="55" column="40" selection-start="1476" selection-end="1476" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/site-cookbooks/Berksfile.lock">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="79" selection-start="79" selection-end="79" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/site-cookbooks/jbossas7/recipes/default.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="15" selection-start="130" selection-end="130" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/site-cookbooks/jbossas7/Vagrantfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-1.5555556">
           <folding />
         </state>
       </provider>

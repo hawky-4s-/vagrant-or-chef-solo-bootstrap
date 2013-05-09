@@ -37,6 +37,8 @@ Vagrant::Config.run do |config|
     #db_config.vm.network :hostonly, "22.22.22.23"
   #end
 
+  config.berkshelf.enabled = true
+
   config.vm.forward_port(80, 8080)
   config.vm.forward_port(3000, 3030)
   config.vm.network :hostonly, "22.22.22.22"

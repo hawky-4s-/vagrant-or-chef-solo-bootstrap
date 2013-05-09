@@ -1,0 +1,1 @@
+cookbook 'jbossas7', :path => '/home/chris/programming/projects/own/vagrant-or-chef-solo-bootstrap/site-cookbooks/jbossas7'

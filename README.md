@@ -88,3 +88,19 @@ http://geek-book.org/book/akka-essentials
 http://geek-book.org/book/instant-sublime-text-starter
 http://geek-book.org/book/apache-tomcat-7-essentials
 
+#bootstrap development env
+* git
+* virtualbox
+* rvm/rbenv
+* ruby
+* berkshelf
+* (foodcritic)
+* vagrant
+* vagrant berkshelf plugin
+#chef-solo
+
+#check for running in vagrant
+if node[:instance_role] == 'vagrant'
+  # do something that should only be done inside
+  # a Vagrant box
+end
