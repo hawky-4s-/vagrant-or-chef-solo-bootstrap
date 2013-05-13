@@ -9,11 +9,14 @@ host="${1:-aaron@192.168.1.39}"
 ssh-keygen -R "${host#*@}" 2> /dev/null
 
 # Generate new ssh key for increased security
-#ssh-keygen -t rsa -f /home/some_user/.ssh/id_rsa -P "123"
+
 
 # Upload our ssh key so we can stop typing the remote password:
 if [ -e "$HOME/.ssh/id_rsa.pub" ]; then
-  cat "$HOME/.ssh/id_rsa.pub" | ssh -o 'StrictHostKeyChecking no' "$host" 'mkdir -m 700 -p ~/.ssh && cat >> ~/.ssh/authorized_keys && chmod 600 ~/.ssh/authorized_keys'
+    cat "$HOME/.ssh/id_rsa.pub" | ssh -o 'StrictHostKeyChecking no' "$host" 'mkdir -m 700 -p ~/.ssh && cat >> ~/.ssh/authorized_keys && chmod 600 ~/.ssh/authorized_keys'
+else
+    ssh-keygen -t rsa -f "$HOME/.ssh/id_rsa" -N ''
+    cat "$HOME/.ssh/id_rsa.pub" | ssh -o 'StrictHostKeyChecking no' "$host" 'mkdir -m 700 -p ~/.ssh && cat >> ~/.ssh/authorized_keys && chmod 600 ~/.ssh/authorized_keys'
 fi
 
 if [ "$host" =~ "root" ]; then
