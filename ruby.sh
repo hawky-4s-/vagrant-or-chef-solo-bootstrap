@@ -11,6 +11,67 @@ export RUBY_BUILD_HOME="${RBENV_PLUGINS_HOME}/ruby-build"
 
 #sudo apt-get -y install build-essential zlib1g-dev libreadline-dev libssl-dev libcurl4-openssl-dev
 
+# Default to Gem install
+if [ -z "$RUBY_INSTALLMETHOD" ]; then
+  export RUBY_INSTALLMETHOD="rbenv"
+fi
+
+# Installing ruby
+case $RUBY_INSTALLMETHOD in
+  "gems")
+    # Using gems
+    if [ -z "$RUBY_VERSION" ]; then
+      # Default to latest
+      gem install chef --no-ri --no-rdoc
+    else
+      gem install chef --no-ri --no-rdoc --version $RUBY_VERSION
+    fi
+    ;;
+
+  "rbenv")
+    # Using omnibus
+    if [ -z "$RUBY_VERSION" ]; then
+      # Default to latest
+      wget -O - http://opscode.com/chef/install.sh | sudo bash -s
+    else
+      wget -O - http://opscode.com/chef/install.sh | sudo bash -s -- -v $RUBY_VERSION
+    fi
+    ;;
+
+  "rvm")
+    # Using omnibus
+    if [ -z "$RUBY_VERSION" ]; then
+      # Default to latest
+      wget -O - http://opscode.com/chef/install.sh | sudo bash -s
+    else
+      wget -O - http://opscode.com/chef/install.sh | sudo bash -s -- -v $RUBY_VERSION
+    fi
+    ;;
+
+  "package")
+    # Using packages
+    if [ -z "$RUBY_VERSION" ]; then
+      # Default to latest
+      apt-get install ruby rubygems ruby-dev -y
+    else
+      apt-get install -y chef=$RUBY_VERSION
+    fi
+    ;;
+
+  *)
+    echo "Unsupported method for installing chef"
+    exit -1
+    ;;
+esac
+
+
+
+
+
+
+
+
+
 
 # install rbenv
 if [ -d "${RBENV_HOME}" ]; then
