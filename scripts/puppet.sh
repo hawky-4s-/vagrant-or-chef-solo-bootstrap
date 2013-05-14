@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env sh
 
 if [ -f .bootstrap_params ]; then
   source .bootstrap_params
@@ -8,9 +8,9 @@ fi
 adduser --system --group --home /var/lib/puppet puppet
 
 # Installing Puppet
-if [ -z "$PUPPET_VERSION" ]; then
+if [ -z "${PUPPET_VERSION}" ]; then
   # Default to latest
   gem install puppet --no-ri --no-rdoc
 else
-  gem install puppet --no-ri --no-rdoc --version $PUPPET_VERSION
+  gem install puppet --no-ri --no-rdoc --version ${PUPPET_VERSION}
 fi

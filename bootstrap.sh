@@ -1,24 +1,29 @@
-#!/bin/bash -xe
+#!/usr/bin/env sh -xe
 
 if [ -f .bootstrap_params ]; then
   source .bootstrap_params
 fi
 
-# commom tmp dir
-export TMP_DIR_BOOTSTRAP="/tmp/bootstrap"
+SCRIPTS_DIR="scripts"
+export BOOTSTRAP_TMP_DIR="/tmp/bootstrap"
 
-source common.sh
+# create temp dir
+mkdir -p ${SCRIPTS_DIR}
+
+# install common stuff
+source ${SCRIPTS_DIR}/common.sh
 
 # install ruby
-source ruby.sh
+source ${SCRIPTS_DIR}/ruby.sh
 
 # install virtualbox
-source virtualbox.sh
+source ${SCRIPTS_DIR}/virtualbox.sh
 
 # install vagrant
-source vagrant.sh
+source ${SCRIPTS_DIR}/vagrant.sh
 
 # install veewee
-source veewee.sh
+source ${SCRIPTS_DIR}/veewee.sh
 
-rm -rf ${TMP_DIR_BOOTSTRAP}
+# cleanup
+rm -rf ${BOOTSTRAP_TMP_DIR}

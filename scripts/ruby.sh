@@ -1,4 +1,8 @@
-#!/bin/bash -xe
+#!/usr/bin/env sh -xe
+
+if [ -f .bootstrap_params ]; then
+  source .bootstrap_params
+fi
 
 export RUBY_VERSION="1.9.3-p392"
 export RBENV_HOME="${HOME}/.rbenv"
@@ -6,51 +10,62 @@ export RBENV_PLUGINS_HOME="${RBENV_HOME}/plugins"
 export RUBY_BUILD_HOME="${RBENV_PLUGINS_HOME}/ruby-build"
 
 # install plugins from array values and a loop?
-# ruby-build, rbenv-gem-rehash, rbenv-default-gems
+# RBENV_INSTALLPLUGINS=("ruby-build" "rbenv-gem-rehash" "rbenv-default-gems")
 
+# RBENV_DEFAULTGEMS=("bundler" "berkshelf" "foodcritic")  bundler, berkshelf, foodcritic,chef,ohai  in  ~/.rbenv/default-gems
+# for i in "${RBENV_DEFAULTGEMS[@]}"; do echo $i >> ${RBENV_HOME}/default-gems
 
 #sudo apt-get -y install build-essential zlib1g-dev libreadline-dev libssl-dev libcurl4-openssl-dev
 
-# Default to Gem install
-if [ -z "$RUBY_INSTALLMETHOD" ]; then
+# Default to rbenv install
+if [ -z "${RUBY_INSTALLMETHOD}" ]; then
   export RUBY_INSTALLMETHOD="rbenv"
 fi
 
 # Installing ruby
-case $RUBY_INSTALLMETHOD in
-  "gems")
-    # Using gems
-    if [ -z "$RUBY_VERSION" ]; then
+case ${RUBY_INSTALLMETHOD} in
+  "source")
+    # Install Ruby from source
+    if [ -z "${RUBY_VERSION}" ]; then
       # Default to latest
       gem install chef --no-ri --no-rdoc
     else
-      gem install chef --no-ri --no-rdoc --version $RUBY_VERSION
+      wget http://ftp.ruby-lang.org/pub/ruby/1.9/ruby-${RUBY_VERSION}.tar.gz
+      tar xvzf ruby-${RUBY_VERSION}.tar.gz
+      cd ruby-${RUBY_VERSION}
+      ./configure --prefix=/opt/ruby
+      make
+      make install
+      cd ..
+      rm -rf ruby-${RUBY_VERSION}
     fi
+
+
     ;;
 
   "rbenv")
     # Using omnibus
-    if [ -z "$RUBY_VERSION" ]; then
+    if [ -z "${RUBY_VERSION}" ]; then
       # Default to latest
       wget -O - http://opscode.com/chef/install.sh | sudo bash -s
     else
-      wget -O - http://opscode.com/chef/install.sh | sudo bash -s -- -v $RUBY_VERSION
+      wget -O - http://opscode.com/chef/install.sh | sudo bash -s -- -v ${RUBY_VERSION}
     fi
     ;;
 
   "rvm")
     # Using omnibus
-    if [ -z "$RUBY_VERSION" ]; then
+    if [ -z "${RUBY_VERSION}" ]; then
       # Default to latest
       wget -O - http://opscode.com/chef/install.sh | sudo bash -s
     else
-      wget -O - http://opscode.com/chef/install.sh | sudo bash -s -- -v $RUBY_VERSION
+      wget -O - http://opscode.com/chef/install.sh | sudo bash -s -- -v ${RUBY_VERSION}
     fi
     ;;
 
   "package")
     # Using packages
-    if [ -z "$RUBY_VERSION" ]; then
+    if [ -z "${RUBY_VERSION}" ]; then
       # Default to latest
       apt-get install ruby rubygems ruby-dev -y
     else

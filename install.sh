@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env sh
 
 if [ -a /var/lib/gems/1.9.1/bin/chef-solo ]; then
    export CHEF_PATH=/var/lib/gems/1.9.1/bin

@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env sh
  
 # Usage: ./deploy.sh [host]
  
@@ -12,15 +12,14 @@ ssh-keygen -R "${host#*@}" 2> /dev/null
 
 
 # Upload our ssh key so we can stop typing the remote password:
-if [ -e "$HOME/.ssh/id_rsa.pub" ]; then
-    cat "$HOME/.ssh/id_rsa.pub" | ssh -o 'StrictHostKeyChecking no' "$host" 'mkdir -m 700 -p ~/.ssh && cat >> ~/.ssh/authorized_keys && chmod 600 ~/.ssh/authorized_keys'
-else
-    ssh-keygen -t rsa -f "$HOME/.ssh/id_rsa" -N ''
-    cat "$HOME/.ssh/id_rsa.pub" | ssh -o 'StrictHostKeyChecking no' "$host" 'mkdir -m 700 -p ~/.ssh && cat >> ~/.ssh/authorized_keys && chmod 600 ~/.ssh/authorized_keys'
+if [ ! -e "${HOME}/.ssh/id_rsa.pub" ]; then
+    ssh-keygen -t rsa -f "${HOME}/.ssh/id_rsa" -N ''
 fi
 
-if [ "$host" =~ "root" ]; then
-    tar cjh . | ssh -o 'StrictHostKeyChecking no' "$host" '
+cat "${HOME}/.ssh/id_rsa.pub" | ssh -o 'StrictHostKeyChecking no' "${host}" 'mkdir -m 700 -p ~/.ssh && cat >> ~/.ssh/authorized_keys && chmod 600 ~/.ssh/authorized_keys'
+
+if [ "${host}" =~ "root" ]; then
+    tar cjh . | ssh -o 'StrictHostKeyChecking no' "${host}" '
     rm -rf /tmp/chef &&
     mkdir /tmp/chef &&
     cd /tmp/chef &&
@@ -28,7 +27,7 @@ if [ "$host" =~ "root" ]; then
     bash install.sh'
 else
     # Use this version if you don't ssh in as root (e.g. on EC-2):
-    tar cj . | ssh -o 'StrictHostKeyChecking no' "$host" '
+    tar cj . | ssh -o 'StrictHostKeyChecking no' "${host}" '
     sudo rm -rf ~/chef &&
     mkdir ~/chef &&
     cd ~/chef &&

@@ -1,4 +1,8 @@
-#!/bin/bash
+#!/usr/bin/env sh
+
+if [ -f .bootstrap_params ]; then
+  source .bootstrap_params
+fi
 
 # get system environment variables
 export OS=$(lsb_release -si)

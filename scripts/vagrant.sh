@@ -1,4 +1,8 @@
-#!/bin/bash -xe
+#!/usr/bin/env sh -xe
+
+if [ -f .bootstrap_params ]; then
+  source .bootstrap_params
+fi
 
 # vagrant version and package download url
 VAGRANT_VERSION=1.2.2
