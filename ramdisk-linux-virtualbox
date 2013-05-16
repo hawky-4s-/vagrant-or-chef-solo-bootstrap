@@ -1,0 +1,3 @@
+sudo mkdir /mnt/ramdisk
+sudo mount -t ramfs RAMDISK /mnt/ramdisk -o maxsize=3221225472
+sudo chmod -R 777 /mnt/ramdisk
