@@ -13,3 +13,5 @@ bootstrap.sh
 * create vagrant box via chef-solo (uses Vagrantfile) / configure strato vserver with chef-solo
 ** workflow
 deploy.sh -> install.sh -> base.sh + common.sh + ruby.sh + chef.sh + execute chef-solo
+
+knife-solo bootstrap?

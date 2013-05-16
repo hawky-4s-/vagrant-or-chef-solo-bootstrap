@@ -23,10 +23,8 @@ else
 fi
 
 # install berkshelf, it's vagrant-plugin, foodcritic and bundler
+# where to install berkshelf etc best?
 gem install berkshelf
-rbenv rehash
 gem install bundler
-rbenv rehash
 gem install foodcritic
-rbenv rehash
 vagrant plugin install vagrant-berkshelf

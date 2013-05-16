@@ -1,16 +1,23 @@
-Vagrant::Config.run do |config|
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
 
-  config.vm.box = "Berkshelf-CentOS-6.3-x86_64-minimal"
-  config.vm.box_url = "https://dl.dropbox.com/u/31081437/Berkshelf-CentOS-6.3-x86_64-minimal.box"
+Vagrant.configure("2") do |config|
+
+  config.vm.box = "precise64"
+  #config.vm.box = "Berkshelf-CentOS-6.3-x86_64-minimal"
+  #config.vm.box_url = "https://dl.dropbox.com/u/31081437/Berkshelf-CentOS-6.3-x86_64-minimal.box"
 
   # http://releases.ubuntu.com/precise/ubuntu-12.04.2-server-amd64.iso
   # http://releases.ubuntu.com/precise/ubuntu-12.04.2-server-i386.iso
 
+  config.vm.hostname = "precise64"
+
   # Assign this VM to a host only network IP, allowing you to access it
   # via the IP.
   # config.vm.network "33.33.33.10"
-  config.vm.forward_port 80, 8080
-  config.vm.forward_port 22, 2222
+  #config.vm.forward_port 80, 8080
+  #config.vm.forward_port 22, 2222
+  #config.vm.network :forwarded_port, guest: 8080, host: 8080
 
   # if you want to set up multiple instances at the same time,
   # you can name them (:web and :gridfs below) and refer to them
@@ -38,20 +45,30 @@ Vagrant::Config.run do |config|
     #db_config.vm.network :hostonly, "22.22.22.23"
   #end
 
+  #config.vm.synced_folder "data", "/data"
+
+  config.vm.provider :virtualbox do |vb|
+    # Use VBoxManage to customize the VM. For example to change memory:
+    vb.customize ["modifyvm", :id, "--memory", "1024", "--cpus", "1"]
+
+  end
+
+  #config.vm.provision :shell, :path => "provision.sh"
+
   config.berkshelf.enabled = true
 
-  config.vm.forward_port(80, 8080)
-  config.vm.forward_port(3000, 3030)
-  config.vm.network :hostonly, "22.22.22.22"
+  #config.vm.forward_port(80, 8080)
+  #config.vm.forward_port(3000, 3030)
+  #config.vm.network :hostonly, "22.22.22.22"
 
-  config.vm.provision :chef_solo do |chef|
-    chef.cookbooks_path = "chef/cookbooks"
-    chef.add_recipe "pferdefleisch"
-    chef.add_recipe "pferdefleisch::dotfiles"
-    chef.add_recipe "pferdefleisch::rbenv"
-    chef.add_recipe "pferdefleisch::postgresql"
-    chef.add_recipe "pferdefleisch::mlt"
-    chef.json = { :user => "vagrant" }
-  end
+  #config.vm.provision :chef_solo do |chef|
+   # chef.cookbooks_path = "chef/cookbooks"
+    #chef.add_recipe "pferdefleisch"
+    #chef.add_recipe "pferdefleisch::dotfiles"
+    #chef.add_recipe "pferdefleisch::rbenv"
+    #chef.add_recipe "pferdefleisch::postgresql"
+    #chef.add_recipe "pferdefleisch::mlt"
+    #chef.json = { :user => "vagrant" }
+  #end
 
 end
