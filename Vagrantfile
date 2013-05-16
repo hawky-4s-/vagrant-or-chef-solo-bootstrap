@@ -1,6 +1,7 @@
 Vagrant::Config.run do |config|
 
-  config.vm.box = "ubuntu-1110-server-amd64"
+  config.vm.box = "Berkshelf-CentOS-6.3-x86_64-minimal"
+  config.vm.box_url = "https://dl.dropbox.com/u/31081437/Berkshelf-CentOS-6.3-x86_64-minimal.box"
 
   # http://releases.ubuntu.com/precise/ubuntu-12.04.2-server-amd64.iso
   # http://releases.ubuntu.com/precise/ubuntu-12.04.2-server-i386.iso
@@ -44,7 +45,7 @@ Vagrant::Config.run do |config|
   config.vm.network :hostonly, "22.22.22.22"
 
   config.vm.provision :chef_solo do |chef|
-    chef.cookbooks_path = "cookbooks"
+    chef.cookbooks_path = "chef/cookbooks"
     chef.add_recipe "pferdefleisch"
     chef.add_recipe "pferdefleisch::dotfiles"
     chef.add_recipe "pferdefleisch::rbenv"

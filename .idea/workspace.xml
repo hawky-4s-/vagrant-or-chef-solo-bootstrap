@@ -2,20 +2,32 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4d1bf848-0980-446f-a2be-53e5d8344345" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/base.sh" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/chef.sh" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/puppet.sh" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap.sh" afterPath="$PROJECT_DIR$/bootstrap.sh" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ruby.sh" afterPath="$PROJECT_DIR$/ruby.sh" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.gitmodules" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_bags/users/hawky4s.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/nodes/appserver_development.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/nodes/infrastructure_development.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/nodes/vagrant.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/roles/common.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/roles/jbossas.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/roles/ldap_client.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/roles/ldap_server.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/roles/mail.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/roles/mongodb.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/roles/web.json" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/usecases.md" afterPath="$PROJECT_DIR$/USECASES.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Berksfile" afterPath="$PROJECT_DIR$/Berksfile" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Vagrantfile" afterPath="$PROJECT_DIR$/Vagrantfile" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/ruby.sh" afterPath="$PROJECT_DIR$/scripts/ruby.sh" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/solo.rb" afterPath="$PROJECT_DIR$/solo.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="vagrant-or-chef-solo-bootstrap.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="4d1bf848-0980-446f-a2be-53e5d8344345" time="1368461332968" ignored="false" />
+    <file path="/Dummy.txt" changelist="4d1bf848-0980-446f-a2be-53e5d8344345" time="1368647938931" ignored="false" />
     <file path="/prepare.sh" changelist="4d1bf848-0980-446f-a2be-53e5d8344345" time="1367503679933" ignored="false" />
     <file path="/install.sh" changelist="4d1bf848-0980-446f-a2be-53e5d8344345" time="1367496912718" ignored="false" />
     <file path="/prepareEnvironment.sh" changelist="4d1bf848-0980-446f-a2be-53e5d8344345" time="1367593381600" ignored="false" />
-    <file path="/Berksfile" changelist="4d1bf848-0980-446f-a2be-53e5d8344345" time="1367943462767" ignored="false" />
+    <file path="/Berksfile" changelist="4d1bf848-0980-446f-a2be-53e5d8344345" time="1368657196950" ignored="false" />
     <file path="/README.md" changelist="4d1bf848-0980-446f-a2be-53e5d8344345" time="1368486838124" ignored="false" />
     <file path="/web" changelist="4d1bf848-0980-446f-a2be-53e5d8344345" time="1367833176128" ignored="false" />
     <file path="/database" changelist="4d1bf848-0980-446f-a2be-53e5d8344345" time="1367829172542" ignored="false" />
@@ -30,7 +42,7 @@
     <file path="/pom.xml" changelist="4d1bf848-0980-446f-a2be-53e5d8344345" time="1368020691626" ignored="false" />
     <file path="$PROJECT_DIR$/../madbid/madbid-analytics/madbid-autobidder/pom.xml" changelist="4d1bf848-0980-446f-a2be-53e5d8344345" time="1368020661213" ignored="false" />
     <file path="/bootstrapEnvironment.sh" changelist="4d1bf848-0980-446f-a2be-53e5d8344345" time="1368140838109" ignored="false" />
-    <file path="/ruby.sh" changelist="4d1bf848-0980-446f-a2be-53e5d8344345" time="1368482307500" ignored="false" />
+    <file path="/ruby.sh" changelist="4d1bf848-0980-446f-a2be-53e5d8344345" time="1368655219849" ignored="false" />
     <file path="/veewee.sh" changelist="4d1bf848-0980-446f-a2be-53e5d8344345" time="1368128510650" ignored="false" />
     <file path="/deploy.sh" changelist="4d1bf848-0980-446f-a2be-53e5d8344345" time="1368340388870" ignored="false" />
     <file path="/bootstrap.sh" changelist="4d1bf848-0980-446f-a2be-53e5d8344345" time="1368479859302" ignored="false" />
@@ -40,6 +52,9 @@
     <file path="$PROJECT_DIR$/../cloudbees-clickstack-devenv/README.md" changelist="4d1bf848-0980-446f-a2be-53e5d8344345" time="1368486841457" ignored="false" />
     <file path="$PROJECT_DIR$/../cloudbees-clickstack-devenv/upload.sh" changelist="4d1bf848-0980-446f-a2be-53e5d8344345" time="1368486884175" ignored="false" />
     <file path="/upload.sh" changelist="4d1bf848-0980-446f-a2be-53e5d8344345" time="1368486883700" ignored="false" />
+    <file path="/test.sh" changelist="4d1bf848-0980-446f-a2be-53e5d8344345" time="1368654721760" ignored="false" />
+    <file path="/a.java" changelist="4d1bf848-0980-446f-a2be-53e5d8344345" time="1368650044824" ignored="false" />
+    <file path="/Vagrantfile" changelist="4d1bf848-0980-446f-a2be-53e5d8344345" time="1368656760395" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,7 +74,6 @@
     <disable_hints />
   </component>
   <component name="DebuggerManager">
-    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
       <breakpoint>
         <option name="NOTIFY_CAUGHT" value="true" />
@@ -96,6 +110,7 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </breakpoint_any>
+    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_rules />
     <ui_properties />
   </component>
@@ -105,75 +120,90 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="veewee.sh" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/veewee.sh">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="84" selection-start="728" selection-end="728" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="install.sh" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/install.sh">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="73" selection-start="679" selection-end="679" vertical-scroll-proportion="0.0">
+            <state line="20" column="29" selection-start="589" selection-end="589" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ruby.sh" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ruby.sh">
+      <file leaf-file-name="Berksfile" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Berksfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="0" selection-start="545" selection-end="762" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="base.sh" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/base.sh">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="14" selection-start="162" selection-end="162" vertical-scroll-proportion="0.0">
+            <state line="43" column="59" selection-start="1014" selection-end="1014" vertical-scroll-proportion="0.73883164">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="vagrant.sh" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vagrant.sh">
+        <entry file="file://$PROJECT_DIR$/scripts/vagrant.sh">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+            <state line="8" column="20" selection-start="173" selection-end="173" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="chef.sh" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/chef.sh">
+      <file leaf-file-name="Vagrantfile" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Vagrantfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="22" selection-start="333" selection-end="337" vertical-scroll-proportion="0.30393326">
+            <state line="3" column="32" selection-start="121" selection-end="121" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="puppet.sh" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/puppet.sh">
+      <file leaf-file-name="ruby.sh" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scripts/ruby.sh">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="29" selection-start="73" selection-end="73" vertical-scroll-proportion="0.0">
+            <state line="8" column="41" selection-start="192" selection-end="192" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="common.sh" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/common.sh">
+      <file leaf-file-name="virtualbox_guest_additions.sh" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scripts/virtualbox_guest_additions.sh">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="11" selection-start="547" selection-end="547" vertical-scroll-proportion="0.0">
+            <state line="14" column="16" selection-start="593" selection-end="643" vertical-scroll-proportion="0.0">
               <folding />
             </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="test.sh" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scripts/test.sh">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="14" column="6" selection-start="591" selection-end="591" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.md" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="11" column="0" selection-start="489" selection-end="489" vertical-scroll-proportion="-6.6">
+              <folding />
+            </state>
+          </provider>
+          <provider editor-type-id="MarkdownPreviewEditor">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="USECASES.md" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/USECASES.md">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
+              <folding />
+            </state>
+          </provider>
+          <provider editor-type-id="MarkdownPreviewEditor">
+            <state />
           </provider>
         </entry>
       </file>
@@ -195,13 +225,8 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/roles/common.json" />
-        <option value="$PROJECT_DIR$/data_bags/users/hawky4s.json" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/roles/mongodb.json" />
         <option value="$PROJECT_DIR$/../madbid/madbid-analytics/pom.xml" />
-        <option value="$PROJECT_DIR$/Berksfile" />
-        <option value="$PROJECT_DIR$/Vagrantfile" />
         <option value="$PROJECT_DIR$/veewee.sh" />
         <option value="$PROJECT_DIR$/bootstrapEnvironment.sh" />
         <option value="$PROJECT_DIR$/README.md" />
@@ -211,6 +236,11 @@
         <option value="$PROJECT_DIR$/chef.sh" />
         <option value="$PROJECT_DIR$/puppet.sh" />
         <option value="$PROJECT_DIR$/ruby.sh" />
+        <option value="$PROJECT_DIR$/install.sh" />
+        <option value="$PROJECT_DIR$/scripts/test.sh" />
+        <option value="$PROJECT_DIR$/scripts/ruby.sh" />
+        <option value="$PROJECT_DIR$/Vagrantfile" />
+        <option value="$PROJECT_DIR$/Berksfile" />
       </list>
     </option>
   </component>
@@ -219,9 +249,50 @@
     <option name="lastSelectedView" value="All" />
   </component>
   <component name="ProjectFrameBounds">
+    <option name="x" value="-1" />
     <option name="y" value="27" />
-    <option name="width" value="840" />
+    <option name="width" value="1682" />
     <option name="height" value="1023" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+          <State>
+            <id>Bash</id>
+          </State>
+          <State>
+            <id>Code style issuesJavaScript</id>
+          </State>
+          <State>
+            <id>Declaration redundancy</id>
+          </State>
+          <State>
+            <id>Error handling</id>
+          </State>
+          <State>
+            <id>JavaScript</id>
+          </State>
+          <State>
+            <id>Portability issues</id>
+          </State>
+          <State>
+            <id>Properties Files</id>
+          </State>
+          <State>
+            <id>Ruby</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>Add Shebang line</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -249,8 +320,8 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -269,6 +340,20 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vagrant-or-chef-solo-bootstrap" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vagrant-or-chef-solo-bootstrap" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scripts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -279,7 +364,7 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="MemberChooser.sorted" value="false" />
-    <property name="options.lastSelected" value="org.codinjutsu.tools.jenkins.JenkinsComponent" />
+    <property name="options.lastSelected" value="editor.preferences.appearance" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../cloudbees-clickstack-devenv" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="MemberChooser.copyJavadoc" value="false" />
@@ -287,8 +372,8 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -491,8 +576,8 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="27" width="840" height="1023" extended-state="4" />
-    <editor active="false" />
+    <frame x="-1" y="27" width="1682" height="1023" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32905984" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32992125" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -514,7 +599,7 @@
       <window_info id="Debug with VisualVM" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Mongo Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32977587" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Jenkins" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4307876" sideWeight="0.67074525" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26968974" sideWeight="0.67074525" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.13452381" sideWeight="0.67074525" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32837528" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -592,115 +677,94 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/deploy.sh">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="63" selection-start="980" selection-end="980" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nodes/vagrant.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="63" selection-start="121" selection-end="121" vertical-scroll-proportion="-4.375">
-          <folding />
-        </state>
+        <state line="28" column="63" selection-start="980" selection-end="980" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="3" selection-start="12" selection-end="12" vertical-scroll-proportion="0.0">
+        <state line="1" column="3" selection-start="12" selection-end="12" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bootstrap.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="25" selection-start="25" selection-end="42" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../cloudbees-clickstack-devenv/Vagrantfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/install.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="29" selection-start="589" selection-end="589" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/vagrant.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="20" selection-start="173" selection-end="173" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="0" selection-start="489" selection-end="489" vertical-scroll-proportion="-6.6">
+          <folding />
+        </state>
+      </provider>
       <provider editor-type-id="MarkdownPreviewEditor">
         <state />
       </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="52" selection-start="489" selection-end="489" vertical-scroll-proportion="81.6">
-          <folding />
-        </state>
-      </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bootstrap.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="25" selection-start="25" selection-end="42" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="11" selection-start="547" selection-end="547" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/puppet.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="29" selection-start="73" selection-end="73" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ruby.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="0" selection-start="545" selection-end="762" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/install.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="73" selection-start="679" selection-end="679" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/base.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="14" selection-start="162" selection-end="162" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vagrant.sh">
+    <entry file="file://$PROJECT_DIR$/USECASES.md">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
+      </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../cloudbees-clickstack-devenv/Vagrantfile">
+    <entry file="file://$PROJECT_DIR$/scripts/virtualbox_guest_additions.sh">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="14" column="16" selection-start="593" selection-end="643" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/test.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="6" selection-start="591" selection-end="591" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/ruby.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="41" selection-start="192" selection-end="192" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Vagrantfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="33" selection-start="1209" selection-end="1209" vertical-scroll-proportion="0.63380283">
+        <state line="3" column="32" selection-start="121" selection-end="121" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/veewee.sh">
+    <entry file="file://$PROJECT_DIR$/Berksfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="84" selection-start="728" selection-end="728" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/chef.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="22" selection-start="333" selection-end="337" vertical-scroll-proportion="0.30393326">
+        <state line="43" column="59" selection-start="1014" selection-end="1014" vertical-scroll-proportion="0.73883164">
           <folding />
         </state>
       </provider>

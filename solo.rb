@@ -1,4 +1,4 @@
-root = File.absolute_path(File.dirname(__FILE__))
+root = File.absolute_path(File.dirname(__FILE__)) + '/chef'
  
 file_cache_path root
 data_bag_path root + '/data_bags'

@@ -40,3 +40,6 @@ cookbook "user"
 cookbook "users"
 cookbook "sudo"
 
+
+#cookbook "artifact", github: "riotgames/artifact-cookbook"
+
