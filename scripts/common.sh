@@ -45,4 +45,6 @@ else
     exit 1;
 fi
 
+echo "Using ${BASH_SETTINGS} as file to store bash settings."
+
 export BASH_SETTINGS

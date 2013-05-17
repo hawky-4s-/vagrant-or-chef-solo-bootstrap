@@ -20,7 +20,7 @@ containsElement () {
 
 export RUBY_MAIN_VERSION="1.9.3"
 export RUBY_PATCH_VERSION="-p392"
-export RUBY_VERSION="$[RUBY_MAIN_VERSION}${RUBY_PATCH_VERSION}"
+export RUBY_VERSION="${RUBY_MAIN_VERSION}${RUBY_PATCH_VERSION}"
 export RBENV_HOME="${HOME}/.rbenv"
 export RBENV_PLUGINS_HOME="${RBENV_HOME}/plugins"
 export RUBY_BUILD_HOME="${RBENV_PLUGINS_HOME}/ruby-build"
@@ -31,6 +31,7 @@ RBENV_INSTALLPLUGINS=('rbenv-gem-rehash' 'rbenv-default-gems')
 RBENV_DEFAULTGEMS=('bundler' 'berkshelf' 'foodcritic' 'knife-solo')
 
 #sudo apt-get -y install build-essential zlib1g-dev libreadline-dev libssl-dev libcurl4-openssl-dev
+
 
 # check if ruby exists and which version it is
 case "$(ruby -v)" in
@@ -49,6 +50,7 @@ if [ -z "${RUBY_INSTALLMETHOD}" ]; then
 fi
 
 echo "Installing ruby using ${RUBY_INSTALLMETHOD} as install method."
+
 
 # Installing ruby
 case ${RUBY_INSTALLMETHOD} in
@@ -69,8 +71,7 @@ case ${RUBY_INSTALLMETHOD} in
     fi
     ;;
   "rbenv" )
-    # Using rbenv
-    # install rbenv
+    # Using rbenv (install when necessary)
     if [ -d "${RBENV_HOME}" ]; then
         echo "${RBENV_HOME} already exists."
         # pull new version?
@@ -87,8 +88,7 @@ case ${RUBY_INSTALLMETHOD} in
     if [ -z "${RUBY_VERSION}" ]; then
         echo "install latest"
     else
-        # Install Ruby versions into ~/.rbenv/versions
-        # (ruby-build is a convenient way to do this)
+        # Install Ruby versions into ~/.rbenv/versions - ruby-build is a convenient way to do this
         if [ -d "${RBENV_PLUGINS_HOME}/ruby-build" ]; then
             (cd ${RBENV_PLUGINS_HOME}/ruby-build && git pull)
         else
@@ -120,14 +120,13 @@ case ${RUBY_INSTALLMETHOD} in
     done
 
     if [ -f "${RBENV_PLUGINS_HOME}/rbenv-default-gems" ]; then
-    #if containsElement "rbenv-default-gems" "${RBENV_INSTALLPLUGINS[@]}"; then
+    if containsElement "rbenv-default-gems" "${RBENV_INSTALLPLUGINS[@]}"; then
         for gem in "${RBENV_DEFAULTGEMS[@]}";
         do
             echo ${gem} >> ${RBENV_HOME}/default-gems
         done
     fi
     ;;
-
   "rvm" )
     # Using rvm
     if [ -z "${RUBY_VERSION}" ]; then
@@ -146,7 +145,6 @@ case ${RUBY_INSTALLMETHOD} in
       sudo apt-get install ruby rubygems ruby-dev -y
     fi
     ;;
-
   * )
     echo "Unsupported method for installing ruby"
     exit -1
