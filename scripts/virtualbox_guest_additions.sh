@@ -6,7 +6,7 @@ fi
 
 VBOX_LATEST_VERSION=$(curl http://download.virtualbox.org/virtualbox/LATEST.TXT)
 
-sudo ${PACKAGE_MANAGER} install dkms build-essential -y
+sudo ${ENV_PACKAGE_MANAGER} install dkms build-essential -y
 #http://download.virtualbox.org/virtualbox/4.2.12/
 
 wget -c http://download.virtualbox.org/virtualbox/${VBOX_LATEST_VERSION}/VBoxGuestAdditions_${VBOX_LATEST_VERSION}.iso -O /tmp/VBoxGuestAdditions_${VBOX_LATEST_VERSION}.iso

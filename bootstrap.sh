@@ -1,29 +1,26 @@
-#!/usr/bin/env sh -xe
+#!/usr/bin/env bash
 
-if [ -f .bootstrap_params ]; then
+if [ -f ~/.bootstrap_params ]; then
   source .bootstrap_params
 fi
 
+SCRIPT_DIR=$(cd $(dirname "$0") && pwd)
 SCRIPTS_DIR="scripts"
 export BOOTSTRAP_TMP_DIR="/tmp/bootstrap"
 
+SCRIPTS=('environment.sh' 'base.sh') # 'ruby.sh' 'virtualbox.sh' 'vagrant.sh' 'veewee.sh')
+
+# change to script dir
+cd $(dirname "$0")
+
 # create temp dir
-mkdir -p ${SCRIPTS_DIR}
+mkdir -p ${BOOTSTRAP_TMP_DIR}
 
-# install common stuff
-source ${SCRIPTS_DIR}/common.sh
-
-# install ruby
-source ${SCRIPTS_DIR}/ruby.sh
-
-# install virtualbox
-source ${SCRIPTS_DIR}/virtualbox.sh
-
-# install vagrant
-source ${SCRIPTS_DIR}/vagrant.sh
-
-# install veewee
-source ${SCRIPTS_DIR}/veewee.sh
+# execute scripts
+for script in "${SCRIPTS[@]}";
+do
+    source "${SCRIPTS_DIR}/${script}";
+done
 
 # cleanup
 rm -rf ${BOOTSTRAP_TMP_DIR}

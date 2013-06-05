@@ -28,17 +28,17 @@ case ${OS} in
   ;;
 esac
 
-sudo ${PACKAGE_MANAGER} update && sudo ${PACKAGE_MANAGER} upgrade -y
-sudo ${PACKAGE_MANAGER} install ${PREREQUISITES} -y
+sudo ${ENV_PACKAGE_MANAGER} update && sudo ${ENV_PACKAGE_MANAGER} upgrade -y
+sudo ${ENV_PACKAGE_MANAGER} install ${PREREQUISITES} -y
 
 
 # Default to package install
-if [ -z "${VIRTUALBOX_INSTALLMETHOD}" ]; then
-  export VIRTUALBOX_INSTALLMETHOD="package"
+if [ -z "${ENV_VIRTUALBOX_INSTALLMETHOD}" ]; then
+  export ENV_VIRTUALBOX_INSTALLMETHOD="package"
 fi
 
 # Installing virtualbox
-case ${VIRTUALBOX_INSTALLMETHOD} in
+case ${ENV_VIRTUALBOX_INSTALLMETHOD} in
   virtualbox-repository )
     # install virtualbox from virtualbox.org repository
     case ${OS} in
@@ -61,8 +61,8 @@ case ${VIRTUALBOX_INSTALLMETHOD} in
       ;;
     esac
 
-    sudo ${PACKAGE_MANAGER} update && sudo ${PACKAGE_MANAGER} upgrade -y
-    sudo ${PACKAGE_MANAGER} install ${VIRTUALBOX_PACKAGE} -y
+    sudo ${ENV_PACKAGE_MANAGER} update && sudo ${ENV_PACKAGE_MANAGER} upgrade -y
+    sudo ${ENV_PACKAGE_MANAGER} install ${VIRTUALBOX_PACKAGE} -y
   ;;
   download )
     echo "not yet availabe"
@@ -83,8 +83,8 @@ case ${VIRTUALBOX_INSTALLMETHOD} in
       ;;
     esac
 
-    sudo ${PACKAGE_MANAGER} update && sudo ${PACKAGE_MANAGER} upgrade -y
-    sudo ${PACKAGE_MANAGER} install ${PACKAGES} -y
+    sudo ${ENV_PACKAGE_MANAGER} update && sudo ${ENV_PACKAGE_MANAGER} upgrade -y
+    sudo ${ENV_PACKAGE_MANAGER} install ${PACKAGES} -y
 
     sudo usermod -a -G vboxusers ${USER}
   ;;

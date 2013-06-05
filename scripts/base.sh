@@ -21,6 +21,6 @@ case ${OS} in
   ;;
 esac
 
-#sudo ${PACKAGE_MANAGER} update && sudo ${PACKAGE_MANAGER} upgrade -y
+#sudo ${ENV_PACKAGE_MANAGER} update && sudo ${ENV_PACKAGE_MANAGER} upgrade -y
 # install necessary packages
-#sudo ${PACKAGE_MANAGER} install ${PACKAGES} -y
+#sudo ${ENV_PACKAGE_MANAGER} install ${PACKAGES} -y
