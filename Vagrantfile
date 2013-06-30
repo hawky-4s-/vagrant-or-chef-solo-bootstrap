@@ -3,14 +3,16 @@
 
 Vagrant.configure("2") do |config|
 
-  config.vm.box = "precise64"
+  config.vm.box = "Ubuntu-Server-12.04.2-x86_64-minimal"
+  config.vm.box_url = "http://puppet-vagrant-boxes.puppetlabs.com/ubuntu-server-12042-x64-vbox4210-nocm.box"
+
   #config.vm.box = "Berkshelf-CentOS-6.3-x86_64-minimal"
   #config.vm.box_url = "https://dl.dropbox.com/u/31081437/Berkshelf-CentOS-6.3-x86_64-minimal.box"
 
   # http://releases.ubuntu.com/precise/ubuntu-12.04.2-server-amd64.iso
   # http://releases.ubuntu.com/precise/ubuntu-12.04.2-server-i386.iso
 
-  config.vm.hostname = "precise64"
+  config.vm.hostname = "livingoz"
 
   # Assign this VM to a host only network IP, allowing you to access it
   # via the IP.
@@ -49,7 +51,7 @@ Vagrant.configure("2") do |config|
 
   config.vm.provider :virtualbox do |vb|
     # Use VBoxManage to customize the VM. For example to change memory:
-    vb.customize ["modifyvm", :id, "--memory", "1024", "--cpus", "1"]
+    vb.customize ["modifyvm", :id, "--memory", "2048", "--cpus", "1"]
 
   end
 

@@ -24,3 +24,7 @@ done
 
 # cleanup
 rm -rf ${BOOTSTRAP_TMP_DIR}
+
+
+#gem install knife-solo
+#gem install knife-solo_data_bag
