@@ -1,7 +1,5 @@
 site :opscode
 
-metadata
-
 # monitoring
 cookbook "papertrail-rsyslog", github: "hipsnip-cookbooks/papertrail-rsyslog"
 cookbook "newrelic-sysmond"
