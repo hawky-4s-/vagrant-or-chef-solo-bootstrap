@@ -4,10 +4,6 @@ source environment.sh
 
 source base.sh
 
-if [ -f .bootstrap_params ]; then
-  source .bootstrap_params
-fi
-
 containsElement () {
     local element;
     for element in "${@:2}";
@@ -28,7 +24,7 @@ export ENV_RUBY_BUILD_HOME="${ENV_RBENV_PLUGINS_HOME}/ruby-build"
 # install rbenv plugins
 RBENV_INSTALLPLUGINS=('rbenv-gem-rehash' 'rbenv-default-gems')
 # install default gems for rbenv
-RBENV_DEFAULTGEMS=('bundler' 'berkshelf' 'foodcritic' 'knife-solo')
+RBENV_DEFAULTGEMS=('bundler' 'berkshelf' 'foodcritic' 'knife-solo' 'knife-solo_data_bag')
 
 #sudo apt-get -y install build-essential zlib1g-dev libreadline-dev libssl-dev libcurl4-openssl-dev
 

@@ -10,10 +10,6 @@ exists "yum"
 exists "uname"
 exists "lsb_release"
 
-if [ -f .bootstrap_params ]; then
-  source .bootstrap_params
-fi
-
 # get system environment variables
 export ENV_OS=$(lsb_release -si)
 export ENV_ARCH=$(uname -m)

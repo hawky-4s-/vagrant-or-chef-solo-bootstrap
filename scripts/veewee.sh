@@ -1,9 +1,5 @@
 #!/usr/bin/env sh
 
-if [ -f .bootstrap_params ]; then
-  source .bootstrap_params
-fi
-
 VEEWEE_INSTALL_DIR="veewee"
 
 # https://github.com/Jimdo/veewee-definitions

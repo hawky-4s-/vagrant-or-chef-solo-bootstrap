@@ -1,9 +1,5 @@
 #!/usr/bin/env sh
 
-if [ -f .bootstrap_params ]; then
-  source .bootstrap_params
-fi
-
 # Add puppet user and group
 adduser --system --group --home /var/lib/puppet puppet
 

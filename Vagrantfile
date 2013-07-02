@@ -9,10 +9,9 @@ Vagrant.configure("2") do |config|
   #config.vm.box = "Berkshelf-CentOS-6.3-x86_64-minimal"
   #config.vm.box_url = "https://dl.dropbox.com/u/31081437/Berkshelf-CentOS-6.3-x86_64-minimal.box"
 
-  # http://releases.ubuntu.com/precise/ubuntu-12.04.2-server-amd64.iso
-  # http://releases.ubuntu.com/precise/ubuntu-12.04.2-server-i386.iso
-
-  config.vm.hostname = "livingoz"
+  #config.omnibus.chef_version = :latest
+  config.ssh.max_tries = 40
+  config.ssh.timeout = 120
 
   # Assign this VM to a host only network IP, allowing you to access it
   # via the IP.
@@ -50,14 +49,44 @@ Vagrant.configure("2") do |config|
   #config.vm.synced_folder "data", "/data"
 
   config.vm.provider :virtualbox do |vb|
-    # Use VBoxManage to customize the VM. For example to change memory:
+    # Use VBoxManage to customize the VM.
     vb.customize ["modifyvm", :id, "--memory", "2048", "--cpus", "1"]
 
   end
 
-  #config.vm.provision :shell, :path => "provision.sh"
-
+  # Use [berkshelf](http://berkshelf.com/)
   config.berkshelf.enabled = true
+
+  # web vm
+  config.vm.define :web do |web_config|
+    web_config.vm.network :private_network, ip: "33.33.33.33"
+    web_config.vm.hostname = "livingoz.com"
+
+    web_config.vm.provision :shell, :path => "install.sh"
+
+    VAGRANT_JSON = MultiJson.load(Pathname(__FILE__).dirname.join('chef/nodes', 'vagrant.json').read)
+    web_config.vm.provision :chef_solo do |chef|
+      chef.roles_path = "chef/roles"
+      chef.data_bags_path = "chef/data_bags"
+      #chef.encrypted_data_bag_secret_key_path = "./data_bag_key"
+
+      chef.add_role("common")
+      # You may also specify custom JSON attributes:
+      #chef.json = VAGRANT_JSON
+      #VAGRANT_JSON['run_list'].each do |recipe|
+      #  chef.add_recipe(recipe)
+      #end if VAGRANT_JSON['run_list']
+    end
+
+    web_config.vm.network :forwarded_port, guest: 80, host: 8080
+  end
+
+  # production vm
+  config.vm.define :prod do |prod_config|
+    prod_config.vm.network :private_network, ip: "33.33.33.34"
+
+    prod_config.vm.provision :shell, :path => "install.sh"
+  end
 
   #config.vm.forward_port(80, 8080)
   #config.vm.forward_port(3000, 3030)

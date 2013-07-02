@@ -1,3 +1,7 @@
+site :opscode
+
+metadata
+
 # monitoring
 cookbook "papertrail-rsyslog", github: "hipsnip-cookbooks/papertrail-rsyslog"
 cookbook "newrelic-sysmond"
@@ -26,9 +30,10 @@ cookbook "nginx"
 
 
 # bootstrap
+cookbook "apt"
 cookbook "git"
 cookbook "openssh"
-cookbook "java"
+cookbook "java", github: "opscode-cookbooks/java"
 cookbook "ntp"
 cookbook "fail2ban"
 

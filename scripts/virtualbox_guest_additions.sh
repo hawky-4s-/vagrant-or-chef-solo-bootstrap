@@ -1,9 +1,5 @@
 #!/usr/bin/env sh
 
-if [ -f .bootstrap_params ]; then
-  source .bootstrap_params
-fi
-
 VBOX_LATEST_VERSION=$(curl http://download.virtualbox.org/virtualbox/LATEST.TXT)
 
 sudo ${ENV_PACKAGE_MANAGER} install dkms build-essential -y

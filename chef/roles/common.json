@@ -30,11 +30,12 @@
     },
     "run_list": [
         "recipe[user::data_bag]",
+        "recipe[apt]",
         "recipe[java]",
         "recipe[ntp]",
         "recipe[git]",
         "recipe[fail2ban]",
-        "recipe[papertrail]",
+        "recipe[papertrail-rsyslog]",
         "recipe[newrelic-sysmond]"
     ]
 }

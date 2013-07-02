@@ -1,8 +1,8 @@
 {
     "run_list": [
-        "role[mail]",
+       /* "role[mail]",
         "role[ldap]",
-        "role[web]",
+        "role[web]",*/
         "role[common]"
     ]
 }

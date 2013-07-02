@@ -1,9 +1,5 @@
 #!/usr/bin/env sh
 
-if [ -f .bootstrap_params ]; then
-  source .bootstrap_params
-fi
-
 # Installing vagrant keys
 mkdir /home/vagrant/.ssh
 chmod 700 /home/vagrant/.ssh

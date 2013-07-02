@@ -1,8 +1,8 @@
 {
     "run_list": [
-        "role[jbossas]",
+/*        "role[jbossas]",
         "role[mongodb]",
-        "role[web]",
+        "role[web]",*/
         "role[common]"
     ]
 }

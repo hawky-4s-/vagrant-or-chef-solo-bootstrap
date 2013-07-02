@@ -1,8 +1,4 @@
-#!/usr/bin/env sh -xe
-
-if [ -f .bootstrap_params ]; then
-  source .bootstrap_params
-fi
+#!/usr/bin/env sh
 
 # vagrant version and package download url
 VAGRANT_VERSION=1.2.2
@@ -30,3 +26,5 @@ gem install foodcritic
 vagrant plugin install vagrant-berkshelf
 
 vagrant plugin install vagrant-vbguest
+
+vagrant plugin install vagrant-omnibus
