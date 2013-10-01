@@ -1,8 +1,14 @@
 #!/usr/bin/env bash
 
-echo "cd $(dirname "$0")"
+if [[ $_ != $0 ]]; then
+  echo "Script is being sourced"
+  SCRIPT_DIR=$(dirname "${BASH_SOURCE}")
+else
+  echo "Script is being run"
+  SCRIPT_DIR=$(cd "$(dirname "$0")" && pwd)
+fi
 
-. ./functions.sh
+source ${SCRIPT_DIR}/functions.sh
 
 exists "aptitude"
 exists "apt-get"

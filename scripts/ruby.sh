@@ -1,8 +1,20 @@
 #!/usr/bin/env bash
 
-source environment.sh
+if [[ $_ != $0 ]]; then
+  echo "Script is being sourced"
+  SCRIPT_DIR=$(dirname "${BASH_SOURCE}")
+else
+  echo "Script is being run"
+  SCRIPT_DIR=$(cd "$(dirname "$0")" && pwd)
+fi
 
-source base.sh
+if [ ! -n "${ENV_BASH_SETTINGS}" ]; then
+  source ${SCRIPT_DIR}/environment.sh
+fi
+
+if [ ! -n "${PACKAGES}" ]; then
+  source ${SCRIPT_DIR}/base.sh
+fi
 
 containsElement () {
     local element;
@@ -22,9 +34,11 @@ export ENV_RBENV_PLUGINS_HOME="${ENV_RBENV_HOME}/plugins"
 export ENV_RUBY_BUILD_HOME="${ENV_RBENV_PLUGINS_HOME}/ruby-build"
 
 # install rbenv plugins
-RBENV_INSTALLPLUGINS=('rbenv-gem-rehash' 'rbenv-default-gems')
-# install default gems for rbenv
-RBENV_DEFAULTGEMS=('bundler' 'berkshelf' 'foodcritic' 'knife-solo' 'knife-solo_data_bag')
+RBENV_PLUGINS=('rbenv-gem-rehash' 'rbenv-default-gems')
+# set default gems to install when not specified otherwise
+if [ ! -n "${RUBY_GEMS}" ]; then
+  RUBY_GEMS=('bundler' 'berkshelf' 'foodcritic' 'knife-solo' 'knife-solo_data_bag')
+fi
 
 #sudo apt-get -y install build-essential zlib1g-dev libreadline-dev libssl-dev libcurl4-openssl-dev
 
@@ -69,58 +83,57 @@ case ${ENV_RUBY_INSTALLMETHOD} in
   "rbenv" )
     # Using rbenv (install when necessary)
     if [ -d "${ENV_RBENV_HOME}" ]; then
-        echo "${ENV_RBENV_HOME} already exists."
-        # pull new version?
+      echo "${ENV_RBENV_HOME} already exists."
+      # pull new version?
     else
-        (cd && git clone https://github.com/sstephenson/rbenv.git ${ENV_RBENV_HOME})
-        # Add rbenv to your PATH
-        # NOTE: rbenv is *NOT* compatible with rvm, so you'll need to remove rvm from your profile if it's present.
-        # (This is because rvm overrides the `gem` command.)
-        echo 'export PATH="$HOME/.rbenv/bin:$HOME/.rbenv/shims:$PATH"' >> ${ENV_BASH_SETTINGS}
-        echo 'eval "$(rbenv init -)"' >> ${ENV_BASH_SETTINGS}
-        source ${ENV_BASH_SETTINGS}
+      $(cd && git clone https://github.com/sstephenson/rbenv.git ${ENV_RBENV_HOME})
+      # Add rbenv to your PATH
+      # NOTE: rbenv is *NOT* compatible with rvm, so you'll need to remove rvm from your profile if it's present.
+      # (This is because rvm overrides the `gem` command.)
+      echo 'export PATH="$HOME/.rbenv/bin:$HOME/.rbenv/shims:$PATH"' >> ${ENV_BASH_SETTINGS}
+      echo 'eval "$(rbenv init -)"' >> ${ENV_BASH_SETTINGS}
+      source ${ENV_BASH_SETTINGS}
     fi
 
     if [ -z "${ENV_RUBY_VERSION}" ]; then
-        echo "install latest"
+      echo "install latest"
     else
-        # Install Ruby versions into ~/.rbenv/versions - ruby-build is a convenient way to do this
-        if [ -d "${ENV_RBENV_PLUGINS_HOME}/ruby-build" ]; then
-            (cd ${ENV_RBENV_PLUGINS_HOME}/ruby-build && git pull)
-        else
-            cd && git clone https://github.com/sstephenson/ruby-build.git ${ENV_RBENV_PLUGINS_HOME}/ruby-build
-        fi
+      # Install Ruby versions into ~/.rbenv/versions - ruby-build is a convenient way to do this
+      if [ -d "${ENV_RBENV_PLUGINS_HOME}/ruby-build" ]; then
+        $(cd ${ENV_RBENV_PLUGINS_HOME}/ruby-build && git pull)
+      else
+        cd && git clone https://github.com/sstephenson/ruby-build.git ${ENV_RBENV_PLUGINS_HOME}/ruby-build
+      fi
 
-        # install specified ruby version
-        if [ -d "${ENV_RBENV_HOME}/versions/${ENV_RUBY_VERSION}" ]; then
-            echo "ruby version ${ENV_RUBY_VERSION} already installed."
-        else
-            rbenv install ${ENV_RUBY_VERSION}
-        fi
+      # install specified ruby version
+      if [ -d "${ENV_RBENV_HOME}/versions/${ENV_RUBY_VERSION}" ]; then
+        echo "ruby version ${ENV_RUBY_VERSION} already installed."
+      else
+        rbenv install ${ENV_RUBY_VERSION}
+      fi
 
-        # Install shims for all Ruby binaries
-        rbenv rehash
+      # Install shims for all Ruby binaries
+      rbenv rehash
 
-        # Set a default Ruby version
-        rbenv global ${ENV_RUBY_VERSION}
-        rbenv rehash
+      # Set a default Ruby version
+      rbenv global ${ENV_RUBY_VERSION}
+      rbenv rehash
     fi
 
-    for plugin in "${RBENV_INSTALLPLUGINS[@]}";
-    do
-        if [ -d "${ENV_RBENV_PLUGINS_HOME}/${plugin}" ]; then
-            (cd "${ENV_RBENV_PLUGINS_HOME}/${plugin}" && git pull)
-        else
-            cd && git clone https://github.com/sstephenson/${plugin}.git ${ENV_RBENV_PLUGINS_HOME}/${plugin}
-        fi
+    for plugin in "${RBENV_PLUGINS[@]}"; do
+      if [ -d "${ENV_RBENV_PLUGINS_HOME}/${plugin}" ]; then
+          $(cd "${ENV_RBENV_PLUGINS_HOME}/${plugin}" && git pull)
+      else
+          cd && git clone https://github.com/sstephenson/${plugin}.git ${ENV_RBENV_PLUGINS_HOME}/${plugin}
+      fi
     done
 
     if [ -f "${ENV_RBENV_PLUGINS_HOME}/rbenv-default-gems" ]; then
-    if containsElement "rbenv-default-gems" "${RBENV_INSTALLPLUGINS[@]}"; then
-        for gem in "${RBENV_DEFAULTGEMS[@]}";
-        do
-            echo ${gem} >> ${ENV_RBENV_HOME}/default-gems
+      if containsElement "rbenv-default-gems" "${RBENV_PLUGINS[@]}"; then
+        for gem in "${RUBY_GEMS[@]}";do
+          echo ${gem} >> ${ENV_RBENV_HOME}/default-gems
         done
+      fi
     fi
     ;;
   "rvm" )

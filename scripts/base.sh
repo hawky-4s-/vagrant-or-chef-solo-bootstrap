@@ -4,7 +4,7 @@
 APT_PACKAGES="git wget build-essential libxslt-dev libxml2-dev zlib1g-dev openssl"
 YUM_PACKAGES="git wget binutils gcc gcc-c++ make patch kernel-headers kernel-devel glibc-headers glibc-devel libxslt-devel libxml2-devel zlib-devel openssl-devel openssl"
 
-case ${OS} in
+case ${ENV_OS} in
   Ubuntu )
     PACKAGES=${APT_PACKAGES}
   ;;
@@ -17,6 +17,8 @@ case ${OS} in
   ;;
 esac
 
-#sudo ${ENV_PACKAGE_MANAGER} update && sudo ${ENV_PACKAGE_MANAGER} upgrade -y
+sudo ${ENV_PACKAGE_MANAGER} update && sudo ${ENV_PACKAGE_MANAGER} upgrade -y
 # install necessary packages
-#sudo ${ENV_PACKAGE_MANAGER} install ${PACKAGES} -y
+sudo ${ENV_PACKAGE_MANAGER} install ${PACKAGES} -y
+
+export ${PACKAGES}

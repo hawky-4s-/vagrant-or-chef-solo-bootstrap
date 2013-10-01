@@ -271,3 +271,54 @@ https://gist.github.com/aaronjensen/4123044
 # veewee
 https://gist.github.com/jedi4ever
 https://github.com/jimdo/veewee-definitions
+
+
+
+
+SIMPLE SETUP
+============
+Required for backend:
+
+JBoss EAP 6.1.x HA
+ActiveMQ / JBoss A-MQ HA
+MongoDB 2.4.6 HA
+Elasticsearch 0.90.5 HA
+
+
+Required for frontend:
+
+nginx
+
+
+Required for monitoring:
+
+newrelic-sysmond -> server monitoring (JBoss, AMQ, ES?)
+newrelic-platform? -> application monitoring, nginx
+hawtio -> camel?
+10gen-mms for mongodb
+papertrail for log parsing... maybe use logstash + kibana + es
+ES monitoring?
+
+Overall:
+
+git
+ntp
+openssh - setup with keys and passphrase
+fail2ban
+
+
+
+VAGRANT DEVELOPMENT SETUP
+=========================
+Required for developing the chef provisioned vagrant vm:
+
+virtualbox
+ruby + gems
+berkshelf
+bundler
+vagrant + plugins
+
+
+TODO FOR SCRIPTS
+================
+Write idempotent scripts, so we do not reinstall anything if it is already present
