@@ -3,12 +3,12 @@
 
 Vagrant.configure("2") do |config|
 
-  config.vm.box = 'Ubuntu-Server-12.04.2-x86_64-minimal'
-  config.vm.box_url = 'http://puppet-vagrant-boxes.puppetlabs.com/ubuntu-server-12042-x64-vbox4210-nocm.box'
+  #config.vm.box = 'Ubuntu-Server-12.04.2-x86_64-minimal'
+  #config.vm.box_url = 'http://puppet-vagrant-boxes.puppetlabs.com/ubuntu-server-12042-x64-vbox4210-nocm.box'
   #config.vm.box.url = 'http://nitron-vagrant.s3-website-us-east-1.amazonaws.com/vagrant_ubuntu_12.04.3_amd64_virtualbox.box'
 
-  #config.vm.box.url = 'http://cloud-images.ubuntu.com/vagrant/precise/current/precise-server-cloudimg-amd64-vagrant-disk1.box'
-  #config.vm.box = 'strato-big'
+  config.vm.box.url = 'http://cloud-images.ubuntu.com/vagrant/precise/current/precise-server-cloudimg-amd64-vagrant-disk1.box'
+  config.vm.box = 'strato-big'
   #config.vm.box.url = 'http://cloud-images.ubuntu.com/vagrant/precise/current/precise-server-cloudimg-i386-vagrant-disk1.box'
 
   # configure vagrant plugins
