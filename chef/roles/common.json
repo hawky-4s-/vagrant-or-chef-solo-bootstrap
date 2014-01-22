@@ -19,7 +19,7 @@
             }
         },
         "ntp": {
-            "servers": ["ntp1.rz-ip.net", "ntp2.rz-ip.net"]
+            "servers": ["ntp1.rz-ip.net", "ntp2.rz-ip.net"] // "ntp1.hosteurope.de", "ntp2.hosteurope.de"
         },
         "papertrail": {
             "port": 43295

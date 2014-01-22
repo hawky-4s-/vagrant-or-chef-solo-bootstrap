@@ -37,7 +37,13 @@ export ENV_RUBY_BUILD_HOME="${ENV_RBENV_PLUGINS_HOME}/ruby-build"
 RBENV_PLUGINS=('rbenv-gem-rehash' 'rbenv-default-gems')
 # set default gems to install when not specified otherwise
 if [ ! -n "${RUBY_GEMS}" ]; then
-  RUBY_GEMS=('bundler' 'berkshelf' 'foodcritic' 'knife-solo' 'knife-solo_data_bag')
+  RUBY_GEMS=(
+    'bundler'
+    'berkshelf'
+    'foodcritic'
+    'knife-solo'
+    'knife-solo_data_bag'
+  )
 fi
 
 #sudo apt-get -y install build-essential zlib1g-dev libreadline-dev libssl-dev libcurl4-openssl-dev

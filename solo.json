@@ -1,6 +1,0 @@
-{
-    "run_list": [
-      "recipe[hawky4s::dotfiles]"
-    ],
-    "user": "hawky4s"
-}

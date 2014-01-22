@@ -21,9 +21,9 @@ case ${CHEF_INSTALLMETHOD} in
     # Using omnibus
     if [ -z "${CHEF_VERSION}" ]; then
       # Default to latest
-      wget -O - http://opscode.com/chef/install.sh | sudo bash -s
+      wget -O - https://www.opscode.com/chef/install.sh | sudo bash -s
     else
-      wget -O - http://opscode.com/chef/install.sh | sudo bash -s -- -v ${CHEF_VERSION}
+      wget -O - https://www.opscode.com/chef/install.sh | sudo bash -s -- -v ${CHEF_VERSION}
     fi
     ;;
 

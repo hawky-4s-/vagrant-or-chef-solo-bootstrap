@@ -2,6 +2,7 @@
     "run_list": [
         "role[jbossas]",
         "role[mongodb]",
+        "role[elasticsearch]",
         "role[common]"
     ]
 }

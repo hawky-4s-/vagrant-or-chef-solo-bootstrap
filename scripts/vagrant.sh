@@ -23,18 +23,11 @@ VAGRANT_VERSION="$(curl -s https://api.github.com/repos/${VAGRANT_GITHUB}/git/re
   version = j.map { |t| t["ref"].split("/").last }.sort.last
   puts version[1, version.length]
 ')"
-VAGRANT_RELEASE_UUID="$(curl -s https://api.github.com/repos/${VAGRANT_GITHUB}/git/refs/tags \
-| ruby -rjson -e '
-  j = JSON.parse(STDIN.read);
-  version = j.map { |t| t["ref"].split("/").last }.sort.last
-  commit = j.find { |t| t["ref"].include? version }
-  puts commit["object"]["sha"]
-')"
-VAGRANT_RELEASE_URL="https://dl.bintray.com/${VAGRANT_GITHUB}"
-
 VAGRANT_FILE="vagrant_${VAGRANT_VERSION}_${ENV_ARCH}.${ENV_PACKAGE_FORMAT}"
+VAGRANT_RELEASE_URL="https://dl.bintray.com/${VAGRANT_GITHUB}/${VAGRANT_FILE}"
+
 mkdir -p "${BOOTSTRAP_TMP_DIR}"
-wget ${VAGRANT_RELEASE_URL}/${VAGRANT_FILE} -O ${BOOTSTRAP_TMP_DIR}/${VAGRANT_FILE}
+wget ${VAGRANT_RELEASE_URL} -O ${BOOTSTRAP_TMP_DIR}/${VAGRANT_FILE}
 
 
 if [ "${ENV_PACKAGE_FORMAT}" = "deb" ]; then
@@ -47,9 +40,14 @@ else
 fi
 
 if [ ! -n "${VAGRANT_PLUGINS}" ]; then
-  VAGRANT_PLUGINS=('berkshelf' 'omnibus' 'cachier') #vbguest
+  VAGRANT_PLUGINS=(
+    'berkshelf'
+    'omnibus'
+    'cachier'
+  ) #vbguest
 fi
 
 for plugin in "${VAGRANT_PLUGINS[@]}"; do
+  vagrant plugin uninstall vagrant-${plugin}
   vagrant plugin install vagrant-${plugin}
 done

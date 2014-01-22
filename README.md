@@ -1,10 +1,13 @@
 bootstrap files borrowed (stolen) from this tutorial  
 [Chef Solo tutorial](http://opinionatedprogrammer.com/2011/06/chef-solo-tutorial-managing-a-single-server-with-chef/#comment-910)
+[Chef Berkshelf tutorial](http://misheska.com/blog/2013/06/16/getting-started-writing-chef-cookbooks-the-berkshelf-way/)
+[Gusteau.gs - Vagrant + Chef-Solo integration](http://gusteau.gs/)
+[rove.io](http://rove.io/)
 
 If you are using this and you would like features added, create an issue or pull request (preferrably on a topic branch you have created in your fork)
 
 #### Todo
-* think about using variable to switch between vagrant/veewee or strato build
+* think about using variable to switch between vagrant/veewee or strato/hosteurope build
 
 
 * rbenv and ruby 1.9.3+

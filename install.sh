@@ -24,17 +24,12 @@ CHEF_BINARY=${CHEF_PATH}/chef-solo
 if [ ! -z '${CHEF_PATH}' ]; then
     export DEBIAN_FRONTEND=noninteractive
     # Upgrade headlessly (this is only safe-ish on vanilla systems)
-    #aptitude update &&
-    #aptitude safe-upgrade -fy
+    aptitude update &&
+    aptitude safe-upgrade -fy
     #apt-get -o Dpkg::Options::="--force-confnew" \
     #    --force-yes -fuy dist-upgrade &&
 
     # install omnibus chef
     curl -L https://www.opscode.com/chef/install.sh | sudo bash
 
-    # Install Ruby and Chef
-    #aptitude install zlib1g-dev openssl libopenssl-ruby1.9.1 libssl-dev libruby1.9.1 libreadline-dev git-core make make-doc -y
-
 fi
-
-#"${CHEF_BINARY}" -c solo.rb -j solo.json

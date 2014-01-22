@@ -12,11 +12,11 @@ ssh-keygen -R "${host#*@}" 2> /dev/null
 
 
 # Upload our ssh key so we can stop typing the remote password:
-if [ ! -e "${HOME}/.ssh/id_rsa.pub" ]; then
-    ssh-keygen -t rsa -f "${HOME}/.ssh/id_rsa" -N ''
+if [ ! -e "${HOME}/.ssh/madbid_analytics_rsa.pub" ]; then
+    ssh-keygen -t rsa -f "${HOME}/.ssh/madbid_analytics_rsa" -N ''
 fi
 
-cat "${HOME}/.ssh/id_rsa.pub" | ssh -o 'StrictHostKeyChecking no' "${host}" 'mkdir -m 700 -p ~/.ssh && cat >> ~/.ssh/authorized_keys && chmod 600 ~/.ssh/authorized_keys'
+cat "${HOME}/.ssh/madbid_analytics_rsa.pub" | ssh -o 'StrictHostKeyChecking no' "${host}" 'mkdir -m 700 -p ~/.ssh && cat >> ~/.ssh/authorized_keys && chmod 600 ~/.ssh/authorized_keys'
 
 if [ "${host}" =~ "root" ]; then
     tar cjh . | ssh -o 'StrictHostKeyChecking no' "${host}" '

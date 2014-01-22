@@ -12,7 +12,7 @@ cookbook "chef-jbossas7", github: "wharton/chef-jbossas7"
 cookbook "chef-mongodb", github: "edelight/chef-mongodb"
 cookbook "chef-mongodb-mms-agent", github: "treasure-data/chef-mongodb-mms-agent"
 
-cookbook "nginx"
+#cookbook "nginx"
 #cookbook "nginx_conf"
 #cookbook "nginx_vhost"
 

@@ -2,9 +2,13 @@
 <project version="4">
   <component name="EclipseCodeFormatter">
     <option name="defaultSettings" value="true" />
-    <option name="id" value="1367500501992" />
+    <option name="formatter" value="ECLIPSE" />
+    <option name="id" value="1385374227240" />
     <option name="name" value="default" />
+    <option name="pathToConfigFileJava" value="$PROJECT_DIR$/../../camunda/camunda-bpm-platform/settings/eclipse/formatter.xml" />
+    <option name="selectedJavaProfile" value="camunda" />
   </component>
+  <component name="IdProvider" IDEtalkID="D610053D40AD162C76FB91025A86F272" />
   <component name="ProjectRootManager" version="2" languageLevel="JDK_1_6" assert-keyword="true" jdk-15="true">
     <output url="file://$PROJECT_DIR$/out" />
   </component>
