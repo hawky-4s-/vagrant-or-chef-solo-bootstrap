@@ -2,24 +2,42 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4d1bf848-0980-446f-a2be-53e5d8344345" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/dir.sh" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/chef/roles/elasticsearch.json" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solo.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solo.rb" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Berksfile.lock" afterPath="$PROJECT_DIR$/Berksfile.lock" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/environments/.gitkeep" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nodes/all.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/roles/elasticsearch.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/roles/mongodb.json" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Berksfile.lock" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/chef/data_bags/users/hawky4s.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/chef/readme.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/chef/roles/elasticsearch.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/chef/roles/mongodb.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/jbossas7/.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/jbossas7/Berksfile" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/jbossas7/Gemfile" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/jbossas7/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/jbossas7/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/jbossas7/Thorfile" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/jbossas7/Vagrantfile" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/jbossas7/chefignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/jbossas7/metadata.rb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/jbossas7/recipes/default.rb" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/chef/environments/.gitkeep" afterPath="$PROJECT_DIR$/.chef/knife.rb" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/chef/nodes/appserver_development.json" afterPath="$PROJECT_DIR$/nodes/appserver_development.json" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/chef/nodes/livingoz.com.json" afterPath="$PROJECT_DIR$/nodes/livingoz.com.json" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/chef/nodes/vagrant.json" afterPath="$PROJECT_DIR$/nodes/vagrant.json" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/chef/roles/common.json" afterPath="$PROJECT_DIR$/roles/common.json" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/chef/roles/jbossas.json" afterPath="$PROJECT_DIR$/roles/jbossas.json" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/chef/roles/ldap_client.json" afterPath="$PROJECT_DIR$/roles/ldap_client.json" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/chef/roles/ldap_server.json" afterPath="$PROJECT_DIR$/roles/ldap_server.json" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/chef/roles/mail.json" afterPath="$PROJECT_DIR$/roles/mail.json" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/chef/roles/web.json" afterPath="$PROJECT_DIR$/roles/web.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Berksfile" afterPath="$PROJECT_DIR$/Berksfile" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Vagrantfile" afterPath="$PROJECT_DIR$/Vagrantfile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chef/site-cookbooks/jbossas7/Vagrantfile" afterPath="$PROJECT_DIR$/chef/site-cookbooks/jbossas7/Vagrantfile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chef/nodes/appserver_development.json" afterPath="$PROJECT_DIR$/chef/nodes/appserver_development.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/chef.sh" afterPath="$PROJECT_DIR$/scripts/chef.sh" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/cleanup.sh" afterPath="$PROJECT_DIR$/scripts/cleanup.sh" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chef/roles/common.json" afterPath="$PROJECT_DIR$/chef/roles/common.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/deploy.sh" afterPath="$PROJECT_DIR$/deploy.sh" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/install.sh" afterPath="$PROJECT_DIR$/install.sh" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/ruby.sh" afterPath="$PROJECT_DIR$/scripts/ruby.sh" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/vagrant.sh" afterPath="$PROJECT_DIR$/scripts/vagrant.sh" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="vagrant-or-chef-solo-bootstrap.iws" />
@@ -92,16 +110,7 @@
       <file leaf-file-name="install.sh" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/install.sh">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="29" selection-start="853" selection-end="853" vertical-scroll-proportion="0.0" vertical-offset="82" max-vertical-offset="720">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="common.json" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/chef/roles/common.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="38" column="21" selection-start="1089" selection-end="1089" vertical-scroll-proportion="-18.11111" vertical-offset="195" max-vertical-offset="828">
+            <state line="34" column="27" selection-start="988" selection-end="988" vertical-scroll-proportion="0.0" vertical-offset="163" max-vertical-offset="738">
               <folding />
             </state>
           </provider>
@@ -110,16 +119,30 @@
       <file leaf-file-name="Vagrantfile" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Vagrantfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="43" selection-start="308" selection-end="308" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1728">
+            <state line="53" column="35" selection-start="1675" selection-end="1675" vertical-scroll-proportion="0.0" vertical-offset="594" max-vertical-offset="2268">
+              <folding>
+                <marker date="1391440376242" expanded="true" signature="632:934" placeholder="#..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="USECASES.md" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/USECASES.md">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="396">
               <folding />
             </state>
+          </provider>
+          <provider editor-type-id="MarkdownPreviewEditor">
+            <state />
           </provider>
         </entry>
       </file>
       <file leaf-file-name="README.md" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="25" selection-start="398" selection-end="398" vertical-scroll-proportion="-2.7692308" vertical-offset="0" max-vertical-offset="5994">
+            <state line="345" column="4" selection-start="10772" selection-end="10875" vertical-scroll-proportion="-17.307692" vertical-offset="5760" max-vertical-offset="6336">
               <folding />
             </state>
           </provider>
@@ -137,73 +160,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="dir.sh" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/scripts/dir.sh">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="44" selection-start="589" selection-end="589" vertical-scroll-proportion="0.0" vertical-offset="270" max-vertical-offset="774">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="cleanup.sh" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/scripts/cleanup.sh">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="10" selection-start="10" selection-end="10" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="108">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="chef.sh" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/scripts/chef.sh">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="36" selection-start="607" selection-end="607" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="954">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="base.sh" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/scripts/base.sh">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="17" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="522">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="environment.sh" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/scripts/environment.sh">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1206">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="test.sh" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/scripts/test.sh">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="4" selection-start="736" selection-end="736" vertical-scroll-proportion="0.0" vertical-offset="378" max-vertical-offset="486">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="test1.sh" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/scripts/test1.sh">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="33" selection-start="194" selection-end="286" vertical-scroll-proportion="0.0" vertical-offset="126" max-vertical-offset="450">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="vagrant.sh" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/scripts/vagrant.sh">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="38" column="54" selection-start="1226" selection-end="1226" vertical-scroll-proportion="0.0" vertical-offset="384" max-vertical-offset="1044">
+            <state line="17" column="6" selection-start="395" selection-end="395" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="954">
               <folding />
             </state>
           </provider>
@@ -211,128 +171,79 @@
       </file>
       <file leaf-file-name="Berksfile" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Berksfile">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="30" selection-start="683" selection-end="683" vertical-scroll-proportion="-18.692308" vertical-offset="0" max-vertical-offset="972">
-              <folding />
-            </state>
-          </provider>
           <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
             <state />
           </provider>
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="7" column="18" selection-start="217" selection-end="217" vertical-scroll-proportion="-4.8461537" vertical-offset="0" max-vertical-offset="1008">
+              <folding />
+            </state>
+          </provider>
         </entry>
       </file>
-      <file leaf-file-name="appserver_development.json" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/chef/nodes/appserver_development.json">
+      <file leaf-file-name="all.json" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/nodes/all.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="30" selection-start="100" selection-end="100" vertical-scroll-proportion="-2.6666667" vertical-offset="0" max-vertical-offset="234">
+            <state line="63" column="17" selection-start="1550" selection-end="1551" vertical-scroll-proportion="0.6210526" vertical-offset="780" max-vertical-offset="1368">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="hawky4s.json" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/data_bags/users/hawky4s.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="57" selection-start="57" selection-end="57" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="108">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="knife.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.chef/knife.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="7" column="36" selection-start="239" selection-end="239" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="234">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gemrc" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dotfiles/.gemrc">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="126">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="elasticsearch.json" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/chef/roles/elasticsearch.json">
+        <entry file="file://$PROJECT_DIR$/roles/elasticsearch.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="40" selection-start="572" selection-end="572" vertical-scroll-proportion="-14.0" vertical-offset="0" max-vertical-offset="540">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="web.json" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/chef/roles/web.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="468">
+            <state line="9" column="31" selection-start="279" selection-end="279" vertical-scroll-proportion="-6.0" vertical-offset="0" max-vertical-offset="468">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="mongodb.json" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/chef/roles/mongodb.json">
+        <entry file="file://$PROJECT_DIR$/roles/mongodb.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="23" selection-start="0" selection-end="678" vertical-scroll-proportion="-10.666667" vertical-offset="0" max-vertical-offset="540">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="mail.json" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/chef/roles/mail.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="288">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ldap_server.json" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/chef/roles/ldap_server.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="486">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ldap_client.json" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/chef/roles/ldap_client.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="486">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="jbossas.json" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/chef/roles/jbossas.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="288">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="livingoz.com.json" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/chef/nodes/livingoz.com.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="234">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="chefignore" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/chef/site-cookbooks/jbossas7/chefignore">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1836">
-              <folding />
+            <state line="3" column="0" selection-start="46" selection-end="75" vertical-scroll-proportion="-2.0" vertical-offset="0" max-vertical-offset="576">
+              <folding>
+                <marker date="1391448351847" expanded="true" signature="0:666" placeholder="{&quot;name&quot;: &quot;mongodb&quot;...}" />
+                <marker date="1391448351847" expanded="true" signature="140:497" placeholder="{...}" />
+                <marker date="1391448351847" expanded="true" signature="157:493" placeholder="{&quot;cluster_name&quot;: &quot;mongodb_madbid&quot;...}" />
+                <marker date="1391448351847" expanded="true" signature="305:487" placeholder="{&quot;api_key&quot;: &quot;c7d4668c382d74c3f633f99766d82607&quot;...}" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="Gemfile" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/chef/site-cookbooks/jbossas7/Gemfile">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="180">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ruby.sh" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/scripts/ruby.sh">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="44" column="36" selection-start="1091" selection-end="1091" vertical-scroll-proportion="0.0" vertical-offset="324" max-vertical-offset="3114">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Gemfile" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Gemfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="33" selection-start="273" selection-end="273" vertical-scroll-proportion="0.16981132" vertical-offset="0" max-vertical-offset="636">
+            <state line="8" column="10" selection-start="303" selection-end="303" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="252">
               <folding />
             </state>
           </provider>
@@ -341,7 +252,7 @@
       <file leaf-file-name="deploy.sh" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/deploy.sh">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="15" selection-start="880" selection-end="880" vertical-scroll-proportion="0.0" vertical-offset="118" max-vertical-offset="756">
+            <state line="18" column="0" selection-start="458" selection-end="631" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="792">
               <folding />
             </state>
           </provider>
@@ -369,24 +280,37 @@
         <option value="$PROJECT_DIR$/scripts/test.sh" />
         <option value="$PROJECT_DIR$/bootstrap.sh" />
         <option value="$PROJECT_DIR$/scripts/environment.sh" />
-        <option value="$PROJECT_DIR$/scripts/base.sh" />
         <option value="$PROJECT_DIR$/.bootstrap.cfg" />
         <option value="$PROJECT_DIR$/scripts/test1.sh" />
         <option value="$PROJECT_DIR$/scripts/cleanup.sh" />
         <option value="$PROJECT_DIR$/scripts/dir.sh" />
         <option value="$PROJECT_DIR$/scripts/vagrant.sh" />
-        <option value="$PROJECT_DIR$/scripts/chef.sh" />
-        <option value="$PROJECT_DIR$/chef/roles/common.json" />
         <option value="$PROJECT_DIR$/chef/site-cookbooks/jbossas7/Vagrantfile" />
         <option value="$PROJECT_DIR$/chef/nodes/appserver_development.json" />
-        <option value="$PROJECT_DIR$/chef/roles/elasticsearch.json" />
-        <option value="$PROJECT_DIR$/Berksfile" />
         <option value="$PROJECT_DIR$/scripts/ruby.sh" />
-        <option value="$PROJECT_DIR$/Vagrantfile" />
-        <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/deploy.sh" />
-        <option value="$PROJECT_DIR$/install.sh" />
         <option value="$PROJECT_DIR$/Gemfile" />
+        <option value="$PROJECT_DIR$/scripts/chef.sh" />
+        <option value="$PROJECT_DIR$/scripts/base.sh" />
+        <option value="$PROJECT_DIR$/chef/roles/common.json" />
+        <option value="$PROJECT_DIR$/install.sh" />
+        <option value="$PROJECT_DIR$/Vagrantfile" />
+        <option value="$PROJECT_DIR$/chef/roles/elasticsearch.json" />
+        <option value="$PROJECT_DIR$/chef/roles/jbossas.json" />
+        <option value="$PROJECT_DIR$/chef/roles/mongodb.json" />
+        <option value="$PROJECT_DIR$/chef/nodes/all.json" />
+        <option value="$PROJECT_DIR$/roles/common.json" />
+        <option value="$PROJECT_DIR$/roles/elasticsearch.json" />
+        <option value="$PROJECT_DIR$/roles/jbossas.json" />
+        <option value="$PROJECT_DIR$/roles/ldap_client.json" />
+        <option value="$PROJECT_DIR$/roles/ldap_server.json" />
+        <option value="$PROJECT_DIR$/roles/mail.json" />
+        <option value="$PROJECT_DIR$/roles/mongodb.json" />
+        <option value="$PROJECT_DIR$/roles/web.json" />
+        <option value="$PROJECT_DIR$/.chef/knife.rb" />
+        <option value="$PROJECT_DIR$/deploy.sh" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/Berksfile" />
+        <option value="$PROJECT_DIR$/nodes/all.json" />
       </list>
     </option>
   </component>
@@ -495,56 +419,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="scripts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="vagrant-or-chef-solo-bootstrap" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="vagrant-or-chef-solo-bootstrap" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="chef" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="vagrant-or-chef-solo-bootstrap" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="vagrant-or-chef-solo-bootstrap" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="chef" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="roles" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="vagrant-or-chef-solo-bootstrap" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="vagrant-or-chef-solo-bootstrap" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="chef" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="nodes" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -556,10 +430,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="vagrant-or-chef-solo-bootstrap" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="chef" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -577,11 +447,21 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="chef" />
+              <option name="myItemId" value="users" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vagrant-or-chef-solo-bootstrap" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vagrant-or-chef-solo-bootstrap" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="users" />
+              <option name="myItemId" value=".chef" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -658,6 +538,14 @@
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="FULL_BACKTRACE" VALUE="false" />
       <method />
     </configuration>
+    <configuration default="true" type="Remote" factoryName="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
+      <method />
+    </configuration>
     <configuration default="true" type="Specs2RunConfiguration" factoryName="Specs2">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <extension name="scalaCoverage" />
@@ -671,14 +559,6 @@
       <setting name="testName" value="" />
       <setting name="testKind" value="Class" />
       <setting name="showProgressMessages" value="true" />
-      <method />
-    </configuration>
-    <configuration default="true" type="Remote" factoryName="Remote">
-      <option name="USE_SOCKET_TRANSPORT" value="true" />
-      <option name="SERVER_MODE" value="false" />
-      <option name="SHMEM_ADDRESS" value="javadebug" />
-      <option name="HOST" value="localhost" />
-      <option name="PORT" value="5005" />
       <method />
     </configuration>
     <configuration default="true" type="RubyRunConfigurationType" factoryName="Ruby">
@@ -839,9 +719,10 @@
     <frame x="1600" y="0" width="1920" height="1080" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26507276" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.21517672" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32848233" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2496063" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -858,7 +739,7 @@
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Mongo Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32977587" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Colour Chooser" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.11075612" sideWeight="0.67287236" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21831736" sideWeight="0.67287236" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32837528" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32947233" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="JavaEE:App" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
@@ -869,7 +750,6 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32992125" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32905984" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Run with VisualVM" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -903,6 +783,13 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/deploy.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="15" selection-start="880" selection-end="880" vertical-scroll-proportion="0.0" vertical-offset="504" max-vertical-offset="756">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/install.sh">
       <provider selected="true" editor-type-id="text-editor">
         <state line="30" column="0" selection-start="868" selection-end="868" vertical-scroll-proportion="0.0" vertical-offset="540" max-vertical-offset="810">
@@ -910,7 +797,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/chef/roles/common.json">
+    <entry file="file://$PROJECT_DIR$/roles/common.json">
       <provider selected="true" editor-type-id="text-editor">
         <state line="38" column="27" selection-start="1049" selection-end="1049" vertical-scroll-proportion="0.0" vertical-offset="684" max-vertical-offset="828">
           <folding />
@@ -920,7 +807,9 @@
     <entry file="file://$PROJECT_DIR$/Vagrantfile">
       <provider selected="true" editor-type-id="text-editor">
         <state line="14" column="39" selection-start="728" selection-end="728" vertical-scroll-proportion="0.0" vertical-offset="252" max-vertical-offset="1476">
-          <folding />
+          <folding>
+            <marker date="1391440376242" expanded="true" signature="632:934" placeholder="#..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -999,13 +888,6 @@
         <state line="4" column="18" selection-start="90" selection-end="90" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/base.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="17" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/scripts/test.sh">
       <provider selected="true" editor-type-id="text-editor">
         <state line="21" column="4" selection-start="736" selection-end="736" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
@@ -1043,21 +925,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/scripts/vagrant.sh">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="54" selection-start="1226" selection-end="1226" vertical-scroll-proportion="0.0" vertical-offset="384" max-vertical-offset="1044">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/chef/site-cookbooks/jbossas7/chefignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1836">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/chef/site-cookbooks/jbossas7/Gemfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="180">
+        <state line="38" column="10" selection-start="1226" selection-end="1226" vertical-scroll-proportion="0.0" vertical-offset="384" max-vertical-offset="1044">
           <folding />
         </state>
       </provider>
@@ -1069,100 +937,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/chef.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="36" selection-start="607" selection-end="607" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="954">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/chef/nodes/livingoz.com.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="660">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/chef/nodes/appserver_development.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="30" selection-start="100" selection-end="100" vertical-scroll-proportion="-2.6666667" vertical-offset="0" max-vertical-offset="234">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/chef/roles/web.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="660">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/chef/roles/mongodb.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="23" selection-start="0" selection-end="678" vertical-scroll-proportion="-10.666667" vertical-offset="0" max-vertical-offset="540">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/chef/roles/mail.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="660">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/chef/roles/ldap_server.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="638">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/chef/roles/ldap_client.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="638">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/chef/roles/jbossas.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="638">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/chef/roles/common.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="21" selection-start="1089" selection-end="1089" vertical-scroll-proportion="-18.11111" vertical-offset="195" max-vertical-offset="828">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/chef/site-cookbooks/jbossas7/Berksfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="24" selection-start="24" selection-end="24" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="162">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/chef/roles/elasticsearch.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="40" selection-start="572" selection-end="572" vertical-scroll-proportion="-14.0" vertical-offset="0" max-vertical-offset="540">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Berksfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="30" selection-start="683" selection-end="683" vertical-scroll-proportion="-18.692308" vertical-offset="0" max-vertical-offset="972">
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/scripts/ruby.sh">
       <provider selected="true" editor-type-id="text-editor">
         <state line="44" column="36" selection-start="1091" selection-end="1091" vertical-scroll-proportion="0.0" vertical-offset="324" max-vertical-offset="3114">
@@ -1170,30 +944,46 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/chef/site-cookbooks/jbossas7/Vagrantfile">
+    <entry file="file://$PROJECT_DIR$/scripts/base.sh">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="39" selection-start="446" selection-end="446" vertical-scroll-proportion="0.31034482" vertical-offset="0" max-vertical-offset="1656">
+        <state line="22" column="0" selection-start="642" selection-end="642" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="522">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/chef/nodes/vagrant.json">
+    <entry file="file://$PROJECT_DIR$/nodes/livingoz.com.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="18" selection-start="38" selection-end="38" vertical-scroll-proportion="0.058919802" vertical-offset="0" max-vertical-offset="611">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="660">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nodes/vagrant.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="18" selection-start="38" selection-end="38" vertical-scroll-proportion="0.054628223" vertical-offset="0" max-vertical-offset="659">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/chef.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="6" selection-start="395" selection-end="395" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="954">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Vagrantfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="43" selection-start="308" selection-end="308" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1728">
-          <folding />
+        <state line="53" column="35" selection-start="1675" selection-end="1675" vertical-scroll-proportion="0.0" vertical-offset="594" max-vertical-offset="2268">
+          <folding>
+            <marker date="1391440376242" expanded="true" signature="632:934" placeholder="#..." />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
+    <entry file="file://$PROJECT_DIR$/USECASES.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="25" selection-start="398" selection-end="398" vertical-scroll-proportion="-2.7692308" vertical-offset="0" max-vertical-offset="5994">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="660">
           <folding />
         </state>
       </provider>
@@ -1201,23 +991,146 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/deploy.sh">
+    <entry file="file://$PROJECT_DIR$/dotfiles/.gemrc">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="15" selection-start="880" selection-end="880" vertical-scroll-proportion="0.0" vertical-offset="118" max-vertical-offset="756">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="684">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nodes/appserver_development.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="1" selection-start="131" selection-end="131" vertical-scroll-proportion="-4.6666665" vertical-offset="0" max-vertical-offset="234">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/roles/common.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="34" column="16" selection-start="972" selection-end="972" vertical-scroll-proportion="-16.407408" vertical-offset="169" max-vertical-offset="828">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/roles/elasticsearch.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="31" selection-start="279" selection-end="279" vertical-scroll-proportion="-6.0" vertical-offset="0" max-vertical-offset="468">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/roles/jbossas.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="0" selection-start="50" selection-end="81" vertical-scroll-proportion="-2.0" vertical-offset="0" max-vertical-offset="288">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/roles/ldap_client.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="0" selection-start="47" selection-end="78" vertical-scroll-proportion="-2.0" vertical-offset="0" max-vertical-offset="486">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/roles/ldap_server.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="0" selection-start="47" selection-end="78" vertical-scroll-proportion="-2.0" vertical-offset="0" max-vertical-offset="486">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/roles/mail.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="0" selection-start="47" selection-end="78" vertical-scroll-proportion="-2.0" vertical-offset="0" max-vertical-offset="288">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/roles/mongodb.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="0" selection-start="46" selection-end="75" vertical-scroll-proportion="-2.0" vertical-offset="0" max-vertical-offset="576">
+          <folding>
+            <marker date="1391448351847" expanded="true" signature="0:666" placeholder="{&quot;name&quot;: &quot;mongodb&quot;...}" />
+            <marker date="1391448351847" expanded="true" signature="140:497" placeholder="{...}" />
+            <marker date="1391448351847" expanded="true" signature="157:493" placeholder="{&quot;cluster_name&quot;: &quot;mongodb_madbid&quot;...}" />
+            <marker date="1391448351847" expanded="true" signature="305:487" placeholder="{&quot;api_key&quot;: &quot;c7d4668c382d74c3f633f99766d82607&quot;...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/roles/web.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="0" selection-start="46" selection-end="77" vertical-scroll-proportion="-2.0" vertical-offset="0" max-vertical-offset="468">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.chef/knife.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="36" selection-start="239" selection-end="239" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="234">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/install.sh">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="29" selection-start="853" selection-end="853" vertical-scroll-proportion="0.0" vertical-offset="82" max-vertical-offset="720">
+        <state line="34" column="27" selection-start="988" selection-end="988" vertical-scroll-proportion="0.0" vertical-offset="163" max-vertical-offset="738">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Gemfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="33" selection-start="273" selection-end="273" vertical-scroll-proportion="0.16981132" vertical-offset="0" max-vertical-offset="636">
+        <state line="8" column="10" selection-start="303" selection-end="303" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="252">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data_bags/users/hawky4s.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="57" selection-start="57" selection-end="57" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="570">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/deploy.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="0" selection-start="458" selection-end="631" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="792">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="345" column="4" selection-start="10772" selection-end="10875" vertical-scroll-proportion="-17.307692" vertical-offset="5760" max-vertical-offset="6336">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nodes/lvps87-230-14-103.dedicated.hosteurope.de.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="597">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Berksfile">
+      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="18" selection-start="217" selection-end="217" vertical-scroll-proportion="-4.8461537" vertical-offset="0" max-vertical-offset="1008">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nodes/all.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="63" column="17" selection-start="1550" selection-end="1551" vertical-scroll-proportion="0.6210526" vertical-offset="780" max-vertical-offset="1368">
           <folding />
         </state>
       </provider>

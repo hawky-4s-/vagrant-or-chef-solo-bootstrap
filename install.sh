@@ -26,6 +26,7 @@ if [ ! -z '${CHEF_PATH}' ]; then
     # Upgrade headlessly (this is only safe-ish on vanilla systems)
     aptitude update &&
     aptitude safe-upgrade -fy
+    apittude install curl -yq
     #apt-get -o Dpkg::Options::="--force-confnew" \
     #    --force-yes -fuy dist-upgrade &&
 

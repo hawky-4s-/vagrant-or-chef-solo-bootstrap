@@ -1,47 +1,49 @@
 {
   "sources": {
     "papertrail-rsyslog": {
-      "locked_version": "1.1.0",
+      "locked_version": "1.1.1",
       "git": "git://github.com/hipsnip-cookbooks/papertrail-rsyslog.git",
-      "ref": "9a89c3e6e8711ec3f203a2e2a8774815967c104a"
+      "ref": "b45fd2c1ac9de9f5e400b47d0f09a23c1df1a323"
     },
     "newrelic-sysmond": {
       "locked_version": "1.3.2"
     },
+    "newrelic": {
+      "locked_version": "0.5.8",
+      "git": "git://github.com/escapestudios-cookbooks/newrelic.git",
+      "ref": "b07924b344f9614cdd61dec3ae042d1134db8554"
+    },
+    "rsyslog": {
+      "locked_version": "1.5.0"
+    },
     "elasticsearch": {
-      "locked_version": "0.2.7",
+      "locked_version": "0.3.7",
       "git": "git://github.com/elasticsearch/cookbook-elasticsearch.git",
-      "ref": "ec04b4b6a4a950f96522d57c5e3cac17c5bfa58a"
+      "ref": "53fa45ce918fb7a4c7b99686bbc86c69c3a468e7"
     },
     "chef-jbossas7": {
       "locked_version": "0.0.1",
       "git": "git://github.com/wharton/chef-jbossas7.git",
       "ref": "75689b63730b0e88f5d39e9057d576f4fa873765"
     },
-    "chef-mongodb": {
-      "locked_version": "0.12.0",
+    "mongodb": {
+      "locked_version": "0.14.6",
       "git": "git://github.com/edelight/chef-mongodb.git",
-      "ref": "5e0d2c8e081ee9bc434afebad7be215076c5e2bb"
-    },
-    "chef-mongodb-mms-agent": {
-      "locked_version": "0.0.2",
-      "git": "git://github.com/treasure-data/chef-mongodb-mms-agent.git",
-      "ref": "9aedcede2fca182b9e6c0417ba6d312ea04ee669"
-    },
-    "nginx": {
-      "locked_version": "1.6.0"
+      "ref": "c38ae968dfdd5f1a7e4f5c4a65c970880515bfbb"
     },
     "apt": {
       "locked_version": "2.0.0"
     },
     "git": {
-      "locked_version": "2.5.0"
+      "locked_version": "2.9.0"
     },
     "openssh": {
       "locked_version": "1.1.4"
     },
     "java": {
-      "locked_version": "1.10.2"
+      "locked_version": "1.19.2",
+      "git": "git://github.com/opscode-cookbooks/java.git",
+      "ref": "2ee43189c2c3e58295c0472fbaf2bb5d8e423690"
     },
     "ntp": {
       "locked_version": "1.3.2"
@@ -50,9 +52,9 @@
       "locked_version": "1.2.0"
     },
     "chef-solo-search": {
-      "locked_version": "0.4.0",
+      "locked_version": "0.5.1",
       "git": "git://github.com/edelight/chef-solo-search.git",
-      "ref": "1f79c1d86e85aa3a2b01e15f90755cf60eb66a4f"
+      "ref": "dc5bff7ef74e424d3e2f04e8ef54642f5fcbbc92"
     },
     "user": {
       "locked_version": "0.3.0"
@@ -63,8 +65,8 @@
     "sudo": {
       "locked_version": "2.1.2"
     },
-    "rsyslog": {
-      "locked_version": "1.5.0"
+    "php": {
+      "locked_version": "1.3.12"
     },
     "build-essential": {
       "locked_version": "1.4.2"
@@ -72,32 +74,50 @@
     "xml": {
       "locked_version": "1.1.2"
     },
-    "monit": {
-      "locked_version": "0.7.1"
+    "mysql": {
+      "locked_version": "4.0.20"
     },
-    "ark": {
-      "locked_version": "0.4.0"
+    "openssl": {
+      "locked_version": "1.1.0"
+    },
+    "yum-epel": {
+      "locked_version": "0.2.0"
     },
     "yum": {
-      "locked_version": "2.3.2"
-    },
-    "python": {
-      "locked_version": "1.4.0"
-    },
-    "runit": {
-      "locked_version": "1.1.6"
-    },
-    "ohai": {
-      "locked_version": "1.1.12"
-    },
-    "dmg": {
-      "locked_version": "1.1.0"
+      "locked_version": "3.0.6"
     },
     "windows": {
       "locked_version": "1.8.10"
     },
     "chef_handler": {
       "locked_version": "1.1.4"
+    },
+    "iis": {
+      "locked_version": "2.0.0"
+    },
+    "python": {
+      "locked_version": "1.4.0"
+    },
+    "ms_dotnet4": {
+      "locked_version": "1.0.2"
+    },
+    "curl": {
+      "locked_version": "1.1.0"
+    },
+    "nodejs": {
+      "locked_version": "1.3.0"
+    },
+    "monit": {
+      "locked_version": "0.7.1"
+    },
+    "ark": {
+      "locked_version": "0.4.0"
+    },
+    "runit": {
+      "locked_version": "1.1.6"
+    },
+    "dmg": {
+      "locked_version": "1.1.0"
     }
   }
 }

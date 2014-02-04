@@ -12,25 +12,27 @@ ssh-keygen -R "${host#*@}" 2> /dev/null
 
 
 # Upload our ssh key so we can stop typing the remote password:
-if [ ! -e "${HOME}/.ssh/madbid_analytics_rsa.pub" ]; then
-    ssh-keygen -t rsa -f "${HOME}/.ssh/madbid_analytics_rsa" -N ''
+if [ ! -e "${HOME}/.ssh/madbid_rsa.pub" ]; then
+    ssh-keygen -t rsa -f "${HOME}/.ssh/madbid_rsa" -N ''
 fi
 
-cat "${HOME}/.ssh/madbid_analytics_rsa.pub" | ssh -o 'StrictHostKeyChecking no' "${host}" 'mkdir -m 700 -p ~/.ssh && cat >> ~/.ssh/authorized_keys && chmod 600 ~/.ssh/authorized_keys'
+cat "${HOME}/.ssh/madbid_rsa.pub" | ssh -o 'StrictHostKeyChecking no' "${host}" 'mkdir -m 700 -p ~/.ssh && cat >> ~/.ssh/authorized_keys && chmod 600 ~/.ssh/authorized_keys'
 
-if [ "${host}" =~ "root" ]; then
-    tar cjh . | ssh -o 'StrictHostKeyChecking no' "${host}" '
-    rm -rf /tmp/chef &&
-    mkdir /tmp/chef &&
-    cd /tmp/chef &&
-    tar xj &&
-    bash install.sh'
-else
-    # Use this version if you don't ssh in as root (e.g. on EC-2):
-    tar cj . | ssh -o 'StrictHostKeyChecking no' "${host}" '
-    sudo rm -rf ~/chef &&
-    mkdir ~/chef &&
-    cd ~/chef &&
-    tar xj &&
-    sudo bash install.sh'
-fi
+ssh-add "${HOME}/.ssh/madbid_rsa" &>/dev/null
+
+#if [ "${host}" =~ "root" ]; then
+#    tar cjh . | ssh -o 'StrictHostKeyChecking no' "${host}" '
+#    rm -rf /tmp/chef &&
+#    mkdir /tmp/chef &&
+#    cd /tmp/chef &&
+#    tar xj &&
+#    bash install.sh'
+#else
+#    # Use this version if you don't ssh in as root (e.g. on EC-2):
+#    tar cj . | ssh -o 'StrictHostKeyChecking no' "${host}" '
+#    sudo rm -rf ~/chef &&
+#    mkdir ~/chef &&
+#    cd ~/chef &&
+#    tar xj &&
+#    sudo bash install.sh'
+#fi

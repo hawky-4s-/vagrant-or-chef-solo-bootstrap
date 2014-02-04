@@ -3,14 +3,16 @@ site :opscode
 # monitoring
 cookbook "papertrail-rsyslog", github: "hipsnip-cookbooks/papertrail-rsyslog"
 cookbook "newrelic-sysmond"
+cookbook "newrelic", github: "escapestudios-cookbooks/newrelic"
+
+cookbook "rsyslog"
 
 # applications
 cookbook "elasticsearch", github: "elasticsearch/cookbook-elasticsearch"
 cookbook "chef-jbossas7", github: "wharton/chef-jbossas7"
 
 # databases
-cookbook "chef-mongodb", github: "edelight/chef-mongodb"
-cookbook "chef-mongodb-mms-agent", github: "treasure-data/chef-mongodb-mms-agent"
+cookbook "mongodb", github: "edelight/chef-mongodb"
 
 #cookbook "nginx"
 #cookbook "nginx_conf"

@@ -325,3 +325,23 @@ vagrant + plugins
 TODO FOR SCRIPTS
 ================
 Write idempotent scripts, so we do not reinstall anything if it is already present
+
+
+USAGE
+=====
+
+    bundle install
+    #`ssh-keygen -f .chef/solo.pem`
+    ssh-keygen -t rsa -f "${HOME}/.ssh/madbid_rsa" -N ''
+
+    cat "${HOME}/.ssh/madbid_rsa.pub" | ssh -o 'StrictHostKeyChecking no' "${host}" 'mkdir -m 700 -p ~/.ssh && cat >> ~/.ssh/authorized_keys && chmod 600 ~/.ssh/authorized_keys'
+
+    cat "${HOME}/.ssh/madbid_rsa.pub" | ssh -o 'StrictHostKeyChecking no' "${host}" 'mkdir -m 700 -p ~/.ssh && cat >> ~/.ssh/authorized_keys && chmod 600 ~/.ssh/authorized_keys'
+    cat "${HOME}/.ssh/madbid_rsa.pub" | ssh -o 'StrictHostKeyChecking no' "root@h2088958.stratoserver.net" 'mkdir -m 700 -p ~/.ssh && cat >> ~/.ssh/authorized_keys && chmod 600 ~/.ssh/authorized_keys'
+
+
+    knife solo bootstrap root@<host> nodes/all.json -VV -i ~/.ssh/madbid_rsa
+
+    knife solo clean root@lvps87-230-14-103.dedicated.hosteurope.de -i ~/.ssh/madbid_rsa
+    knife solo bootstrap root@lvps87-230-14-103.dedicated.hosteurope.de nodes/all.json -i ~/.ssh/madbid_rsa
+    knife solo bootstrap root@h2088958.stratoserver.net nodes/all.json -i ~/.ssh/madbid_rsa

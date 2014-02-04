@@ -1,0 +1,21 @@
+{
+  "name": "elasticsearch",
+  "chef_type": "role",
+  "json_class": "Chef::Role",
+  "description": "elasticsearch server role",
+  "default_attributes": {
+    "elasticsearch": {
+      "cluster": "elasticsearch-madbid",
+      "bind_ip": "127.0.0.1",
+      "version" : "1.0.0.Beta2"
+    },
+    "java": {
+      "install_flavor": "openjdk",
+      "jdk_version": "7"
+    }
+  },
+  "run_list": [
+    "recipe[java]",
+    "recipe[elasticsearch]"
+  ]
+}

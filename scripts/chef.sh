@@ -2,7 +2,7 @@
 
 # Default to Gem install
 if [ -z "${CHEF_INSTALLMETHOD}" ]; then
-  export CHEF_INSTALLMETHOD="gems"
+  export CHEF_INSTALLMETHOD="omnibus"
 fi
 
 # Installing chef
