@@ -40,8 +40,8 @@
   "elasticsearch": {
     "cluster": { "name" : "elasticsearch-madbid" },
     "discovery": { "zen": { "ping": { "multicast": { "enabled": false }}}},
-    "network": { "host": "_local_" },
-    "http": { "host": "_local_" },
+    "network": { "host": "127.0.0.1" },
+    "http": { "host": "127.0.0.1" },
     "version" : "1.0.0.RC2",
     "plugins" : {
       "elasticsearch/marvel/latest": {},

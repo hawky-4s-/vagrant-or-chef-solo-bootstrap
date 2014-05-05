@@ -2,42 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4d1bf848-0980-446f-a2be-53e5d8344345" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/environments/.gitkeep" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nodes/all.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/roles/elasticsearch.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/roles/mongodb.json" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Berksfile.lock" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/chef/data_bags/users/hawky4s.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/chef/readme.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/chef/roles/elasticsearch.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/chef/roles/mongodb.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jbossas7/.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jbossas7/Berksfile" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jbossas7/Gemfile" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jbossas7/LICENSE" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jbossas7/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jbossas7/Thorfile" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jbossas7/Vagrantfile" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jbossas7/chefignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jbossas7/metadata.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jbossas7/recipes/default.rb" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/chef/environments/.gitkeep" afterPath="$PROJECT_DIR$/.chef/knife.rb" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/chef/nodes/appserver_development.json" afterPath="$PROJECT_DIR$/nodes/appserver_development.json" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/chef/nodes/livingoz.com.json" afterPath="$PROJECT_DIR$/nodes/livingoz.com.json" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/chef/nodes/vagrant.json" afterPath="$PROJECT_DIR$/nodes/vagrant.json" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/chef/roles/common.json" afterPath="$PROJECT_DIR$/roles/common.json" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/chef/roles/jbossas.json" afterPath="$PROJECT_DIR$/roles/jbossas.json" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/chef/roles/ldap_client.json" afterPath="$PROJECT_DIR$/roles/ldap_client.json" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/chef/roles/ldap_server.json" afterPath="$PROJECT_DIR$/roles/ldap_server.json" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/chef/roles/mail.json" afterPath="$PROJECT_DIR$/roles/mail.json" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/chef/roles/web.json" afterPath="$PROJECT_DIR$/roles/web.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Berksfile" afterPath="$PROJECT_DIR$/Berksfile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Vagrantfile" afterPath="$PROJECT_DIR$/Vagrantfile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/chef.sh" afterPath="$PROJECT_DIR$/scripts/chef.sh" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/deploy.sh" afterPath="$PROJECT_DIR$/deploy.sh" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/install.sh" afterPath="$PROJECT_DIR$/install.sh" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="vagrant-or-chef-solo-bootstrap.iws" />

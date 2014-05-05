@@ -1,6 +1,7 @@
 #!/usr/bin/env sh
  
 # Usage: ./deploy.sh [host]
+key="madbid_rsa"
  
 host="${1:-aaron@192.168.1.39}"
  
@@ -12,13 +13,13 @@ ssh-keygen -R "${host#*@}" 2> /dev/null
 
 
 # Upload our ssh key so we can stop typing the remote password:
-if [ ! -e "${HOME}/.ssh/madbid_rsa.pub" ]; then
-    ssh-keygen -t rsa -f "${HOME}/.ssh/madbid_rsa" -N ''
+if [ ! -e "${HOME}/.ssh/${key}.pub" ]; then
+    ssh-keygen -t rsa -f "${HOME}/.ssh/${key}" -N ''
 fi
 
-cat "${HOME}/.ssh/madbid_rsa.pub" | ssh -o 'StrictHostKeyChecking no' "${host}" 'mkdir -m 700 -p ~/.ssh && cat >> ~/.ssh/authorized_keys && chmod 600 ~/.ssh/authorized_keys'
+cat "${HOME}/.ssh/${key}.pub" | ssh -o 'StrictHostKeyChecking no' "${host}" 'mkdir -m 700 -p ~/.ssh && cat >> ~/.ssh/authorized_keys && chmod 600 ~/.ssh/authorized_keys'
 
-ssh-add "${HOME}/.ssh/madbid_rsa" &>/dev/null
+ssh-add "${HOME}/.ssh/${key}" &>/dev/null
 
 #if [ "${host}" =~ "root" ]; then
 #    tar cjh . | ssh -o 'StrictHostKeyChecking no' "${host}" '

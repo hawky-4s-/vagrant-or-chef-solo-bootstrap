@@ -2,14 +2,15 @@ site :opscode
 
 # monitoring
 cookbook "papertrail-rsyslog", github: "hipsnip-cookbooks/papertrail-rsyslog"
-cookbook "newrelic-sysmond"
+#cookbook "newrelic-sysmond"
 cookbook "newrelic", github: "escapestudios-cookbooks/newrelic"
+cookbook "bprobe", github: "boundary/bprobe_cookbook"
 
 cookbook "rsyslog"
 
 # applications
 cookbook "elasticsearch", github: "elasticsearch/cookbook-elasticsearch"
-cookbook "chef-jbossas7", github: "wharton/chef-jbossas7"
+#cookbook "chef-jbossas7", github: "wharton/chef-jbossas7"
 
 # databases
 cookbook "mongodb", github: "edelight/chef-mongodb"

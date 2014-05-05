@@ -1,1 +1,5 @@
-{"name":"data_bag_item_users_hawky4s","json_class":"Chef::DataBagItem","chef_type":"data_bag_item","data_bag":"users","raw_data":{"id":"hawky4s"}}
+{
+	"id": "hawky4s",
+	"comment": "me",
+	"home": "/home/hawky4s"
+}
